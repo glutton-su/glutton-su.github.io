@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag on Glutton&#39;s Diet</title>
-    <link>http://localhost:39555/tags/tag/</link>
+    <link>http://localhost:1313/tags/tag/</link>
     <description>Recent content in Tag on Glutton&#39;s Diet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Glutto.n</copyright>
-    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:39555/tags/tag/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2025 Glutto.n</copyright>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tag/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>whoami</title>
-      <link>http://localhost:39555/whoami/1733993236812-whoami/</link>
+      <link>http://localhost:1313/whoami/</link>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39555/whoami/1733993236812-whoami/</guid>
+      <guid>http://localhost:1313/whoami/</guid>
       <description>an example to get you started</description>
       
     </item>

@@ -9,6 +9,7 @@ displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
+author = { name = "Glutto.n" }
 
 [params.author]
-name = "Glutto.n"
+bio = "I am a cybersecurity and ethical hacking student. I am currently practicing and expanding my knowledge of  ethical hacking and cybersecurity through various websites."
