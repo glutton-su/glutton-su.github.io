@@ -7,5 +7,11 @@ pageRef = "whoami"
 identifier = "ahN1rHDY1i"
 weight = 9999
 
+[[main]]
+name = "Writeups"
+pageRef = "writeups"
+identifier = "Y0o1hlYZxH"
+weight = 9999
+
 [[footer]]
 none = "none"
