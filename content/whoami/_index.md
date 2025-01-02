@@ -7,5 +7,3 @@ tags: ["example", "tag"]
 ---
 I am a cybersecutiry student, learning ways of ethical hacking and cybersecurity. I am currently in the process of expanding my knowledge through various websites.
 
-Check more at [Blowfish documentation](https://blowfish.page/)
-undefined
