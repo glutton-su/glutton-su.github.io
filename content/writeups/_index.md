@@ -1,8 +1,8 @@
 ---
 title: "Writeups"
-date: 2025-01-02
-draft: false
-description: "a description"
-tags: ["example", "tag"]
+description: A collection of writeups of different rooms, challenges and machines
+type: "list"
+hidemeta: true
+
 ---
-Here are writeups of rooms and machines I have completed in different websites.
+A stash of write-ups dissecting challenges, exploits, and machines—sorted by the platforms they were dropped on.
