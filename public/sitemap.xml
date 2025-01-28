@@ -36,6 +36,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/writeups/ctfs/softwarica-hackfest/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/writeups/tryhackme/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
