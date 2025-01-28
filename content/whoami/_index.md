@@ -1,12 +1,14 @@
 ---
-title: "whoami"
+title: "whoami??"
 date: 2024-12-12
 draft: false
 description: "a description"
 tags: ["example", "tag"]
 ---
 
-# Subeg Suwal
+
+
+# I am Subeg Suwal(glutton)
 
 Hi, I’m **Subeg Suwal**, a passionate cybersecurity student currently pursuing a **BSc. (Hons) in Cybersecurity and Ethical Hacking** at **Softwarica College of IT and E-Commerce**. I’m deeply interested in exploring the world of cybersecurity, particularly in areas like **web application penetration testing**, **ethical hacking**, and **CTF challenges**.
 
