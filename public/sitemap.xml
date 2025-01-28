@@ -4,7 +4,25 @@
 
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/writeups/tryhackme/lookup/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/writeups/tryhackme/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/writeups/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -31,22 +49,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/writeups/tryhackme/lookup/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://localhost:1313/writeups/ctfs/softwarica-hackfest/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/writeups/tryhackme/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/writeups/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

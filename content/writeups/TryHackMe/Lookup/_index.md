@@ -2,6 +2,7 @@
 title: "Lookup"
 description: A simple writeup of this easy box.
 type: "text"
+date: 2025-01-27
 hidemeta: true
 
 ---
