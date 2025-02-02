@@ -3,7 +3,7 @@ title: "Softwarica Hackfest"
 description: Writeups of Softwarica hackfest
 type: "list"
 hidemeta: true
-date: 2025-02-28
+date: 2025-01-28
 
 ---
 
