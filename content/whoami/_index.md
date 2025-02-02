@@ -44,7 +44,7 @@ Hi, I’m **Subeg Suwal**, a passionate cybersecurity student currently pursuing
 
 ## **Goals**
 
-- **Short-term**: Master web application penetration testing and earn certifications like **CompTIA Security+** and **CEH (Certified Ethical Hacker)**.
+- **Short-term**: Master web application penetration testing and earn certifications like **CBBH(Certified Bug Bounty Hunter)** and **CPTS(Certified Penetration Testing Specialist)**.
 - **Long-term**: Become a professional penetration tester or cybersecurity analyst, contributing to a safer digital world.
 
 ---
