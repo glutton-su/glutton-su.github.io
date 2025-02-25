@@ -8,16 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Writeups &middot; Glutton&#39;s Diet</title>
-  <meta name="title" content="Writeups &middot; Glutton&#39;s Diet" />
+  <title>Rabbit Store &middot; Glutton&#39;s Diet</title>
+  <meta name="title" content="Rabbit Store &middot; Glutton&#39;s Diet" />
   
-  <meta name="description" content="A collection of writeups of different rooms, challenges and machines" />
+  <meta name="description" content="A simple writeup of this Medium box." />
   
   
   
-  <link rel="canonical" href="http://localhost:1313/writeups/" />
+  <link rel="canonical" href="http://localhost:1313/writeups/tryhackme/rabbitstr/" />
   
-  <link rel="alternate" type="application/rss+xml" href="/writeups/index.xml" title="Glutton's Diet" />
+  <link rel="alternate" type="application/rss+xml" href="/writeups/tryhackme/rabbitstr/index.xml" title="Glutton's Diet" />
   
   
   
@@ -69,17 +69,19 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/writeups/">
+  <meta property="og:url" content="http://localhost:1313/writeups/tryhackme/rabbitstr/">
   <meta property="og:site_name" content="Glutton&#39;s Diet">
-  <meta property="og:title" content="Writeups">
-  <meta property="og:description" content="A collection of writeups of different rooms, challenges and machines">
+  <meta property="og:title" content="Rabbit Store">
+  <meta property="og:description" content="A simple writeup of this Medium box.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/writeups/tryhackme/rabbitstr/feature.png">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Writeups">
-  <meta name="twitter:description" content="A collection of writeups of different rooms, challenges and machines">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/writeups/tryhackme/rabbitstr/feature.png">
+  <meta name="twitter:title" content="Rabbit Store">
+  <meta name="twitter:description" content="A simple writeup of this Medium box.">
 
   
   
@@ -432,19 +434,13 @@
 
 
 
- 
-  
-   
-  
- 
-
 
 
 
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/img/bghugo.jpeg);">
+    style="background-image:url(/writeups/tryhackme/rabbitstr/feature.png);">
     
 
 
@@ -466,7 +462,7 @@
 
  <header>
   
-  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Writeups</h1>
+  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Rabbit Store</h1>
   <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
     
 
@@ -505,8 +501,8 @@
       
     
   <script>
-    var oid = "views_writeups\/_index.md"
-    var oid_likes = "likes_writeups\/_index.md"
+    var oid = "views_writeups\/TryHackMe\/rabbitstr\/_index.md"
+    var oid_likes = "likes_writeups\/TryHackMe\/rabbitstr\/_index.md"
   </script>
   
   
@@ -516,7 +512,234 @@
   <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
     
     <div class="min-w-0 min-h-0 max-w-prose">
-      <p>A stash of write-ups dissecting challenges, exploits, and machines—sorted by the platforms they were dropped on.</p>
+      
+
+<h1 class="relative group">Rabbit Store 
+    <div id="rabbit-store" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#rabbit-store" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">Enumeration 
+    <div id="enumeration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#enumeration" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+<p>For port enumeration, I started with rustscan and then did a detailed scan with nmap.</p>
+<p>Rustscan result:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%201.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>nmap result for the ports:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%202.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>For directory enumeration, I mainly use gobuster.</p>
+<p>Gobuster directory enumeration:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%203.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%204.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>There wasn’t anything useful i could get from here so I went back to main site.</p>
+<p>Then, I tried signing up but it was for subscribed users only. Then after some messing around I found we can add another parameter in burp request. also we have to change our email and password while sending the request. These will be our creds to login as subscribed user.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%205.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%206.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">Getting shell 
+    <div id="getting-shell" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#getting-shell" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+<p>This is what we see when login. There is a file upload but it strips the extension and uploads it. while going to the file path it is downloaded to the system.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%207.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%208.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Now let’s try getting it local host files.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%209.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>It works!! BUT idk if it will give me anything outside /var</p>
+<p>SINCE, this is rabbit mq, maybe there is an admin port in the <a href="http://localhost" target="_blank">localhost</a> of the machine?? Let’s try.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2010.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Looks like it works.</p>
+<p>Looking at this result, I didn’t find anything interesting so, I fuzzed /api endpoint.</p>
+<p>After fuzzing for /api endpoints i found a /api/docs endpoint which then uploaded gave a interesting endpoint of an chatbot</p>
+<p>After catching the request for chatbot, i messed around a bit but could not find anything. After I received a hint that there was either XSS or SSTI, I realized there was no XSS so I then searched for SSTI exploit payloads. A simple payload, if I were to put some values between two curly brackets like so {{7*3}} it’s result would be printed in the response. This worked, which meant I could insert a payload to gain a reverse shell. As I had no experience in exploiting SSTI, I asked the almighty ChatGPT for help. It generated me a payload which I inserted in the username parameter.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2011.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2012.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2013.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">Privilege Escalation 
+    <div id="privilege-escalation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#privilege-escalation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2014.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>With a linpeas scan I found a directory called rabbitmq. When I listed all files I found a cookie file. This could mean we have a exploit using this cookie??</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2015.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Searching for erlang in metasploit we do get a cookie reverse shell exploit. BUT this wasn’t working on my machine because my metasploit was recently updated, so I had to use TryHackMe attackbox. After gaining a shell of rabbitmq from metasploit, I ran a python3 reverse shell and got the shell in my machine.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2016.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Remember how we got index.html of the admin port through <a href="http://localhost" target="_blank">localhost</a>? We are going to forward that port to our localhost so that we can access the admin page. For this i used chisel and forwarded the port.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2017.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2018.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2019.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>The default credentials were not working, digging around in official documentation of rabbitmq, we need to make the user with admin permission ourselves then we can access the page. So, I again closed the chisel server-client i was running and created the user called admin in the rabbitmq’s shell and again ran chisel.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2020.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>IT WORKED!!</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2021.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Looking around, I find a interesting file and downloaded it.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2022.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Turns out this contains hashes, what a luck right? NOOOO</p>
+<p>I spent more than 5 hours trying to crack it but no use. THIS WAS A RABBIT HOLE.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2023.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>After many trials and errors we found the password for root, the password seems to be the hash it self.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2024.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="Rabbit%20Store%201a2b62881f098084a8c9ffae9b796ac5/image%2025.png" alt="image.png" />
+      
+    </figure>
+</p>
 
     </div>
 
@@ -525,312 +748,11 @@
 
   </section>
   
-
-    
-    
-    
-    
-    
-
-    
-
-      
-
-        
-        <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-        
-        
-          
-          
-
-  <a href="/writeups/tryhackme/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/writeups/tryhackme/feature.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/writeups/tryhackme/">TryHackMe</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2025-02-22T00:00:00&#43;00:00">22 February 2025</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-          
-          
-
-  <a href="/writeups/ctfs/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/writeups/ctfs/feature.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/writeups/ctfs/">CTFs</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2025-01-28T00:00:00&#43;00:00">28 January 2025</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-          
-          
-
-  <a href="/writeups/hackthebox/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/writeups/hackthebox/feature.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/writeups/hackthebox/">HackTheBox</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2025-01-28T00:00:00&#43;00:00">28 January 2025</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-          
-        
-        </section>
-        
-
-    
-
-    
-
+  <section class="mt-10 prose dark:prose-invert">
+    <p class="py-8 border-t">
+      <em>There are no articles to list here yet.</em>
+    </p>
+  </section>
   
 
     
