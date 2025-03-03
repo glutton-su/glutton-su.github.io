@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CTFs on Glutton&#39;s Diet</title>
-    <link>http://localhost:1313/writeups/ctfs/</link>
-    <description>Recent content in CTFs on Glutton&#39;s Diet</description>
+    <title>ApoorvCTF on Glutton&#39;s Diet</title>
+    <link>http://localhost:1313/tags/apoorvctf/</link>
+    <description>Recent content in ApoorvCTF on Glutton&#39;s Diet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Glutto.n</copyright>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/writeups/ctfs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/apoorvctf/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ApoorvCTF 2025</title>
