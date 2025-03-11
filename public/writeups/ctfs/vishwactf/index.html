@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>VishwaCTF&#39;25 &middot; Glutton&#39;s Diet</title>
+  <meta name="title" content="VishwaCTF&#39;25 &middot; Glutton&#39;s Diet" />
+  
+  <meta name="description" content="Writeups of VishwaCTF 2025" />
+  <meta name="keywords" content="CTF, VIshwaCTF&#39;25, 2025, " />
+  
+  
+  <link rel="canonical" href="http://localhost:1313/writeups/ctfs/vishwactf/" />
+  
+  <link rel="alternate" type="application/rss+xml" href="/writeups/ctfs/vishwactf/index.xml" title="Glutton's Diet" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.1c9cd0d1ebaf117272b5c4f6bd49878475cb210d5e0da4f061632d779f5bb46851881c187e6e634dba5071c4e3d80e7d5cec1dd80443b2fa68acd358f9eda881.css"
+    integrity="sha512-HJzQ0euvEXJytcT2vUmHhHXLIQ1eDaTwYWMtd59btGhRiBwYfm5jTbpQccTj2A59XOwd2ARDsvporNNY&#43;e2ogQ==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.a2d78d78672e549fbfc972ece871725b5478ba0b65708dda20cb97ab80a865eae6d247e1b05a4aec6ebbf78647ec3233bad8b2609ed98eee53cd58aa17128bc7.js"
+    integrity="sha512-oteNeGcuVJ&#43;/yXLs6HFyW1R4ugtlcI3aIMuXq4CoZerm0kfhsFpK7G6794ZH7DIzutiyYJ7Zju5TzViqFxKLxw==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.37d2094687372da3f7343a221a470f6b8806f7891aa46a5a03966af7f0ebd38b9fe536cb154e6ad28f006d184b294525a7c4054b6bbb4be62d8b453b42db99bd.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S&#43;Yti0U7QtuZvQ=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/writeups/ctfs/vishwactf/">
+  <meta property="og:site_name" content="Glutton&#39;s Diet">
+  <meta property="og:title" content="VishwaCTF&#39;25">
+  <meta property="og:description" content="Writeups of VishwaCTF 2025">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/writeups/ctfs/vishwactf/feature.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/writeups/ctfs/vishwactf/feature.png">
+  <meta name="twitter:title" content="VishwaCTF&#39;25">
+  <meta name="twitter:description" content="Writeups of VishwaCTF 2025">
+
+  
+  
+
+  
+  
+  <meta name="author" content="Glutto.n" />
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Glutton&rsquo;s Diet</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/projects/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Projects
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/whoami/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        WHOAMI
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/writeups/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Writeups
+    </p>
+</a>
+
+
+
+            
+            
+  <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class=" flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/projects/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Projects
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/whoami/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            WHOAMI
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/writeups/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Writeups
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/writeups/ctfs/vishwactf/feature.png);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+ <header>
+  
+  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">VishwaCTF&#39;25</h1>
+  <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+</div>
+
+
+  </div>
+  
+  
+    
+    
+      
+      
+    
+  <script>
+    var oid = "views_writeups\/CTFs\/VishwaCTF\/_index.md"
+    var oid_likes = "likes_writeups\/CTFs\/VishwaCTF\/_index.md"
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+  
+  </header>
+  <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
+    
+    <div class="min-w-0 min-h-0 max-w-prose">
+      <p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Due to some teams being disqualified, we were later ranked 11th.</p>
+
+
+<h1 class="relative group">Web Exploitation 
+    <div id="web-exploitation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web-exploitation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+
+
+<h2 class="relative group">Challenge: Flames 
+    <div id="challenge-flames" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-flames" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{SQL_1nj3ct10n_C4n_Qu3ry_Your_He4rt} 
+    <div id="flag-vishwactfsql_1nj3ct10n_c4n_qu3ry_your_he4rt" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfsql_1nj3ct10n_c4n_qu3ry_your_he4rt" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This challenge must be done by spawning the instance.</p>
+<p>We got stuck in a rabbit hole, it gave us results of XSS so we tried fetching it through our webhook with no avail.</p>
+<p>Then we stumbled across a new endpoint. /db.php</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%201.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>This error made us think there is sqli again, as our previous attempts failed. Then we tried  union sqli with syntax <code>'UNION SELECT 1,2,3;-- -</code>.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%202.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Then we saw some outputs we didn’t saw before. AND the link we get gives us access to famous love stories and our flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%203.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%204.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: <strong>scan-it-to-stay-safe</strong> 
+    <div id="challenge-scan-it-to-stay-safe" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-scan-it-to-stay-safe" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{Y0u_7R4c30lI7_3000_4rK} 
+    <div id="flag-vishwactfy0u_7r4c30li7_3000_4rk" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfy0u_7r4c30li7_3000_4rk" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>After starting the instance we get to see a url scanner.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%205.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>So, why not try <a href="http://localhost/flag" target="_blank">http://localhost/flag</a>, right? It didn’t work and also said max tries reached for it.</p>
+<p>But this challenge was also very guessy. We tried web hook. IT WORKED. When we check the url of the Web hook, and checked the web hook site we got our flag in one of the headers called flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%206.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Are We Up? 
+    <div id="challenge-are-we-up" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-are-we-up" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{Y0r4_lo7al_b4bby_A4k18aw2} 
+    <div id="flag-vishwactfy0r4_lo7al_b4bby_a4k18aw2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfy0r4_lo7al_b4bby_a4k18aw2" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This was quite a hard challenge though it was rated as medium.</p>
+<p>After gaining the domain for this challenge we also found the availability checker of uptimer so we tried to bypass <a href="http://localhost:8080" target="_blank">localhost:8080</a> while submitting the url using ngrok server.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%207.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%208.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%209.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Then when we tried redirecting 127.0.0.1:8080/flag instead of using <a href="http://localhost:8008" target="_blank">localhost:8008</a> we succeed in retriving the flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2010.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2011.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Forgot-h1-login 
+    <div id="challenge-forgot-h1-login" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-forgot-h1-login" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{y0u_4r3_7h3_h4ck3r_numb3r_0n3_2688658} 
+    <div id="flag-vishwactfy0u_4r3_7h3_h4ck3r_numb3r_0n3_2688658" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfy0u_4r3_7h3_h4ck3r_numb3r_0n3_2688658" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>First we try to send the reset request and redirect it to our email hook site using burpsuite.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2012.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2013.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>In response we get otp and also the flag in x-ctf-secrets header</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2014.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">Cryptography 
+    <div id="cryptography" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#cryptography" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+
+
+<h2 class="relative group">Challenge: Rythmic Cipher 
+    <div id="challenge-rythmic-cipher" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-rythmic-cipher" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{CIPHERED_DANCE} 
+    <div id="flag-vishwactfciphered_dance" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfciphered_dance" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This challenge provided us with 2 gifs.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2015.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>These gifs had dancing men so we thought of dancing man cipher. So we used a gif decompiler to split our gif into frames.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2016.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2017.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Then we went to <a href="http://dcode.fr" target="_blank">dcode.fr</a> to decode this using dancing man cipher</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2018.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>This is the contents of the flag, the flag format was <code>VishwaCTF{word1_word2}</code></p>
+
+
+<h2 class="relative group">Challenge: Aira of the Lost Code 
+    <div id="challenge-aira-of-the-lost-code" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-aira-of-the-lost-code" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{H4v3_y0u_7ri3d_Ar_70n3l1c0} 
+    <div id="flag-vishwactfh4v3_y0u_7ri3d_ar_70n3l1c0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfh4v3_y0u_7ri3d_ar_70n3l1c0" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This challenged provided us with one .png file which contained different symbols.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2019.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2020.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Comparing these symbols in <a href="http://dcode.fr" target="_blank">dcode.fr</a> symbol cipher list we saw a cipher called hymnos cipher.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2021.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>And decoding this gave us the contents of the flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2022.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p><strong>Fun Fact:</strong> Ar Tonelico is a game that uses this cipher.</p>
+
+
+<h2 class="relative group">Challenge: Chaos 
+    <div id="challenge-chaos" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-chaos" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{CrYpt0_cRyPT0_1g_It_1s_sOm3_7hiNg_t0_D0} 
+    <div id="flag-vishwactfcrypt0_crypt0_1g_it_1s_som3_7hing_t0_d0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfcrypt0_crypt0_1g_it_1s_som3_7hing_t0_d0" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Challenge.py:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2023.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>output.txt</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2024.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>solve.py:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2025.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Output:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2026.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Forgotten Cipher 
+    <div id="challenge-forgotten-cipher" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-forgotten-cipher" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{VIC_Decoded_113510} 
+    <div id="flag-vishwactfvic_decoded_113510" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfvic_decoded_113510" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2027.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2028.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Along with these we were given 1 file called info.txt which contained the following:</p>
+<pre tabindex="0"><code>Encrypted Message :- 0d4ac648a2f0bee7bccf0231c35e13ba7bc93a2d8f7d9498885e3f4998
+
+Key Evolution Formula :- K(n) = [ K(n−1) × 3 + index ] mod 25
+</code></pre><p>After the hint was given we gave the description, hint and contents of the info.txt file to chat gpt which then provided us with a script which actually worked.</p>
+<p>Solution:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">rotate_right</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">r_bits</span><span class="p">,</span> <span class="n">max_bits</span><span class="o">=</span><span class="mi">8</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Performs a right rotation on an integer value.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">((</span><span class="n">val</span> <span class="o">&gt;&gt;</span> <span class="n">r_bits</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">val</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">max_bits</span> <span class="o">-</span> <span class="n">r_bits</span><span class="p">)))</span> <span class="o">&amp;</span> <span class="p">((</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">max_bits</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">rotate_left</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">r_bits</span><span class="p">,</span> <span class="n">max_bits</span><span class="o">=</span><span class="mi">8</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Performs a left rotation on an integer value.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">((</span><span class="n">val</span> <span class="o">&lt;&lt;</span> <span class="n">r_bits</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">val</span> <span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">max_bits</span> <span class="o">-</span> <span class="n">r_bits</span><span class="p">)))</span> <span class="o">&amp;</span> <span class="p">((</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">max_bits</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decrypt_vic_cipher</span><span class="p">(</span><span class="n">ciphertext_hex</span><span class="p">,</span> <span class="n">initial_key</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Decrypts a given ciphertext using the VIC cipher.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    ciphertext_hex: The hexadecimal string representing the ciphertext.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    initial_key: The starting key for the cipher decryption.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Convert the hexadecimal string to bytes</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ciphertext</span> <span class="o">=</span> <span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">ciphertext_hex</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plaintext</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">key</span> <span class="o">=</span> <span class="n">initial_key</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Update the key based on the current index</span>
+</span></span><span class="line"><span class="cl">        <span class="n">key</span> <span class="o">=</span> <span class="p">(</span><span class="n">key</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">%</span> <span class="mi">256</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1"># Reverse the rotation based on the index</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># If index is even, reverse a left rotation with a right rotation</span>
+</span></span><span class="line"><span class="cl">            <span class="n">temp</span> <span class="o">=</span> <span class="n">rotate_right</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># If index is odd, reverse a right rotation with a left rotation</span>
+</span></span><span class="line"><span class="cl">            <span class="n">temp</span> <span class="o">=</span> <span class="n">rotate_left</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1"># Reverse XOR with the key to get the original plaintext byte</span>
+</span></span><span class="line"><span class="cl">        <span class="n">plaintext</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">^</span> <span class="n">key</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Decode the plaintext to a UTF-8 string</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">plaintext</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Example usage</span>
+</span></span><span class="line"><span class="cl"><span class="n">ciphertext_hex</span> <span class="o">=</span> <span class="s2">&#34;0d4ac648a2f0bee7bccf0231c35e13ba7bc93a2d8f7d9498885e3f4998&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">initial_key</span> <span class="o">=</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">decrypt_vic_cipher</span><span class="p">(</span><span class="n">ciphertext_hex</span><span class="p">,</span> <span class="n">initial_key</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Decrypted Flag:&#34;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+</span></span></code></pre></div>
+
+<h1 class="relative group">Reverse Engineering 
+    <div id="reverse-engineering" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse-engineering" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+
+
+<h2 class="relative group">Challenge: Safe Box 
+    <div id="challenge-safe-box" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-safe-box" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{h3r3_y0u_@r3} 
+    <div id="flag-vishwactfh3r3_y0u_r3" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfh3r3_y0u_r3" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This challenge gave us a .zip file which contained</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2029.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Contents of the zip file:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2030.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Then, the files were transferred to our windows vm.</p>
+<p>We need melon loader, unity explorer for this challenge.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2031.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>After it is fully loaded we get this UI:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2032.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>We were stuck here for while trying to reverse the executable. After  messing around we got the flag by opening the object explorer extending the container in the list and unchecking game object which removed the front layer, revealing the flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2033.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2034.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Hungry Friend 
+    <div id="challenge-hungry-friend" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-hungry-friend" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{th3r3_4r3_5n4k35_all_4r0und} 
+    <div id="flag-vishwactfth3r3_4r3_5n4k35_all_4r0und" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfth3r3_4r3_5n4k35_all_4r0und" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This challenge gave us a .exe file.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2035.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>I used a vm for this. Initially it wasn’t running due to missing libraries of GCC. So I installed MinGW.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2036.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>As for patching the binary, we used ghidra. Only patching it needed was change the comparing number.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2037.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>It checked the score of the user, if it was 9999 which then called the function called SHOW_FLAG.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2038.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>So, to patch this we change the comparing value to one.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2039.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Now, when we run it, it should gove us the flag when our score is 1.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2040.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Phantom Rollcall 
+    <div id="challenge-phantom-rollcall" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-phantom-rollcall" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag:VishwaCTF{ReV_EngIn33ring_Is_Crezy} 
+    <div id="flagvishwactfrev_engin33ring_is_crezy" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flagvishwactfrev_engin33ring_is_crezy" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>First intercepted the network traffic saw a firebase api calls, we checked if it was open then began searching.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2041.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2042.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Then, tried if we can run other queries in the firebase.  Then we guessed so hard asf that we stumbled upon this glorious yet unknown secret.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2043.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>After that we used that key in this dumb enter attendance code once that’s done.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2044.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Here you go the flag:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2045.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">Steganography 
+    <div id="steganography" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#steganography" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+
+
+<h2 class="relative group">Challenge: Quadrant 
+    <div id="challenge-quadrant" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-quadrant" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{aG9lMTIzNDU2c3Bhc3NhZ2U=} 
+    <div id="flag-vishwactfag9lmtizndu2c3bhc3nhz2u" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfag9lmtizndu2c3bhc3nhz2u" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This challenge provided us with a zip file containing 4 pictures named flag1,2,3,4.</p>
+<p>These images contained some pieces of qr code.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2046.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Now we have to combine this so we can get a valid output, so we used Gimp to restore the broken qr.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2047.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2048.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Though this was still not complete we gave it to google lens without expecting anything but we got the flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2049.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Spilled Paint Water 
+    <div id="challenge-spilled-paint-water" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-spilled-paint-water" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{STROKE__N_FILL} 
+    <div id="flag-vishwactfstroke__n_fill" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfstroke__n_fill" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This Challenge gave us a file called canvas.svg which on opening was just blank.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2050.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Then we opened it in a text editor and changed width and height to 300 but no result was seen.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2051.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2052.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>This also didn’t give any result so, as last effort we asked chatgpt to fix this and it gave us the fixed version.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2053.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2054.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Let’s Race 
+    <div id="challenge-lets-race" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-lets-race" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF  {1_l0v3_ C0r5} 
+    <div id="flag-vishwactf--1_l0v3_-c0r5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactf--1_l0v3_-c0r5" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This challenge provided us with a zip file and had a note <code>use winrar</code> .</p>
+<p>We have a avif file and a doc.txt which had a hint.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2055.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2056.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>We tried many things but no avail. then we changed it to .png and went to extract the data using stegonline. AND while keeping the value of R=1, G=2, B=3 we got the flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2057.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Echoes of Unknown 
+    <div id="challenge-echoes-of-unknown" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-echoes-of-unknown" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{CR4CK3D_7H3_C0D3} 
+    <div id="flag-vishwactfcr4ck3d_7h3_c0d3" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfcr4ck3d_7h3_c0d3" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Uploading the file directly didn’t give anything useful. So we used audacity and we could see the morse code.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2058.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>When we crack the morse code we get our flag contents.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2059.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">DIFR 
+    <div id="difr" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#difr" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+
+
+<h2 class="relative group">Challenge: Leaky Stream 
+    <div id="challenge-leaky-stream" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-leaky-stream" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{this_is_first_part_this_second_part} 
+    <div id="flag-vishwactfthis_is_first_part_this_second_part" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfthis_is_first_part_this_second_part" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This challenge gave us a pcap file, so just to ttry our luck we simply did strings and grep “VishwaCTF” and guess what?, we got first part of the flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2060.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>As this gave us the first part of flag, we tried grepping “}” and scan through the output to get the other half of the flag. AND we got another part of the flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2061.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Persist 
+    <div id="challenge-persist" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-persist" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{b3l1ef_in_r3g_p0wer} 
+    <div id="flag-vishwactfb3l1ef_in_r3g_p0wer" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfb3l1ef_in_r3g_p0wer" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>We used the RegRipper Tool for the HKCU file.
+<a href="https://github.com/keydet89/RegRipper3.0" target="_blank">https://github.com/keydet89/RegRipper3.0</a></p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2062.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2063.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2064.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2065.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Closer inspection of report.txt :</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2066.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>We got the flag.</p>
+
+
+<h1 class="relative group">OSINT 
+    <div id="osint" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#osint" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+
+
+<h2 class="relative group">Challenge: The lecture code 
+    <div id="challenge-the-lecture-code" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-the-lecture-code" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{cs5o_qu4ck!} 
+    <div id="flag-vishwactfcs5o_qu4ck" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfcs5o_qu4ck" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Linked in enumeration:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2067.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Then checking vishwactf.com/heroes</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2068.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>In github:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2069.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2070.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>modified crack2.py:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">custom_decrypt</span><span class="p">(</span><span class="n">encrypted_text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">shift</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># Same shift used for encryption</span>
+</span></span><span class="line"><span class="cl">    <span class="n">reversed_text</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">-</span> <span class="n">shift</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">encrypted_text</span><span class="p">)</span>  <span class="c1"># Reverse shift</span>
+</span></span><span class="line"><span class="cl">    <span class="n">original_text</span> <span class="o">=</span> <span class="n">reversed_text</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Reverse back to original</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">original_text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">hidden_encrypted_pass</span> <span class="o">=</span> <span class="s2">&#34;$nf7xtbr8vf&#34;</span>  
+</span></span><span class="line"><span class="cl"><span class="n">custom_decrypt</span><span class="p">(</span><span class="n">hidden_encrypted_pass</span><span class="p">)</span>
+</span></span></code></pre></div>
+
+<h2 class="relative group">Challenge:  Stadium!! 
+    <div id="challenge--stadium" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge--stadium" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{Saling_Cricket_Stadium_Ghanche} 
+    <div id="flag-vishwactfsaling_cricket_stadium_ghanche" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactfsaling_cricket_stadium_ghanche" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Checking given image in google lens:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2071.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>Checking the X account we know the name.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2072.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge: Follow For Clues 
+    <div id="challenge-follow-for-clues" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge-follow-for-clues" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag:<strong>VishwaCTF{L3t_Th3_hUn7_8Eg1n}</strong> 
+    <div id="flagvishwactfl3t_th3_hun7_8eg1n" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flagvishwactfl3t_th3_hun7_8eg1n" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>There was nothing in linked in and twitter so we looked up in instagram. Checking about 10 posts, we got the flag.</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2073.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">Challenge : The Summit 
+    <div id="challenge--the-summit" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#challenge--the-summit" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Flag: VishwaCTF{18.51,73.89_Devendra Fadnavis} 
+    <div id="flag-vishwactf18517389_devendra-fadnavis" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flag-vishwactf18517389_devendra-fadnavis" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The THeMIS in tank suggest it was event related to military power showcase and the peoples seems to be from India ,and there was date in the watermark of image. so i googled for the military event organized in Jan 5 , 2025 in India and there was event named , “Know your Army”. and it was organized by southern command and also got another article : <a href="https://www.punekarnews.in/pune-know-your-army-mela-2025-set-to-showcase-indian-armys-strength-and-innovation-from-january-3-5/" target="_blank">https://www.punekarnews.in/pune-know-your-army-mela-2025-set-to-showcase-indian-armys-strength-and-innovation-from-january-3-5/</a></p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2074.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2075.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="VishwaCTF-2025%20Writeups%201acb62881f0980cf8ee8d6ceb9fd15a8/image%2076.png" alt="image.png" />
+      
+    </figure>
+</p>
+<p>The event was organized in race course of RWITC whose coordinates was , 18.51, 73.89 and after using Chatgpt for adjusting the coordinates we got the flag: VishwaCTF{18.51,73.89_Devendra Fadnavis}</p>
+
+    </div>
+
+
+
+
+  </section>
+  
+  <section class="mt-10 prose dark:prose-invert">
+    <p class="py-8 border-t">
+      <em>There are no articles to list here yet.</em>
+    </p>
+  </section>
+  
+
+    
+
+  
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+    <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex flex-col list-none sm:flex-row">
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href=""
+            title="">
+            
+            
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2025
+      Glutto.n
+    </p>
+    
+
+    
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://localhost:1313/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VIshwaCTF&#39;25 on Glutton&#39;s Diet</title>
+    <link>http://localhost:1313/tags/vishwactf25/</link>
+    <description>Recent content in VIshwaCTF&#39;25 on Glutton&#39;s Diet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Glutto.n</copyright>
+    <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vishwactf25/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>VishwaCTF&#39;25</title>
+      <link>http://localhost:1313/writeups/ctfs/vishwactf/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/writeups/ctfs/vishwactf/</guid>
+      <description>Due to some teams being disqualified, we were later ranked 11th.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
