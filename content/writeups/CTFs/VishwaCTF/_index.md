@@ -3,9 +3,7 @@ title: "VishwaCTF\'25"
 description: Writeups of VishwaCTF 2025
 type: "list"
 draft: false
-date: 2025-03-03
-showLikes: true
-showViews: true
+date: 2025-03-11
 Tags:
 - CTF
 - VIshwaCTF'25
