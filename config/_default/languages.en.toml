@@ -16,7 +16,7 @@ title = "glutto.n"
  [params.author]
    name = "Subeg Suwal"
    image = "img/profile.png"
-   headline = "Building and Breaking stuffs for fun and profit..."
+   headline = "Breaking and Escalating permissions for fun..."
    bio = "Web & Network Pentester | Learning Binary Exploitation "
    links = [
      { email = "mailto:Glutton-S@ncateam.xyz" },
