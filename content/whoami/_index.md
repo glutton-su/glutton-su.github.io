@@ -1,9 +1,8 @@
 ---
 title: "whoami??"
 date: 2024-12-12
-draft: false
+type: "list"
 description: "a description"
-tags: ["example", "tag"]
 ---
 
 
@@ -36,7 +35,7 @@ Hi, I’m **Subeg Suwal**, a passionate cybersecurity student currently pursuing
 
 ## **Projects and Achievements**
 
-- **Personal Website**: [glutton-su.tech](http://glutton-su.tech/)
+- **Personal Website**: [glutton-su.xyz](https://glutton-su.xyz/)
 - **CTF Write-ups**: Regularly participating in CTF challenges and documenting my progress.
 - **Home Lab**: Setting up a home lab for practicing penetration testing and ethical hacking.
 
@@ -56,4 +55,4 @@ Feel free to reach out to me for collaborations, discussions, or just to chat ab
 - **Email**: Glutton-S@ncateam.xyz
 - **LinkedIn**: [Subeg Suwal](https://www.linkedin.com/in/subeg-suwal-252747312/)
 - **GitHub**: [glutton-su](https://github.com/glutton-su)
-- **Discord**: `glutto.n` (1238121414356242492)
+- **Discord**: `g1u770.n` (1238121414356242492)

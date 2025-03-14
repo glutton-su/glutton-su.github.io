@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Glutton&#39;s Diet</title>
+    <title>glutto.n</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Glutton&#39;s Diet</description>
+    <description>Recent content on glutto.n</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 Glutto.n</copyright>
-    <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2025 glutto.n | All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>VishwaCTF 2025</title>
+      <link>http://localhost:1313/writeups/ctfs/vishwactf/</link>
+      <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/writeups/ctfs/vishwactf/</guid>
+      <description>Due to some teams being disqualified, we were later ranked 11th.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/ctfs/vishwactf/feature.png" />
+    </item>
     
     <item>
       <title>ApoorvCTF 2025</title>
@@ -17,6 +27,36 @@
       <guid>http://localhost:1313/writeups/ctfs/apoorvctf/</guid>
       <description>Binary Exploitation # Challenge: Kogarashi Café - The First Visit # Flag: apoorvctf{c0ffee_buff3r_sp1ll} # Solution:</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/ctfs/apoorvctf/featured.png" />
+    </item>
+    
+    <item>
+      <title>Rabbit Store</title>
+      <link>http://localhost:1313/writeups/tryhackme/rabbitstr/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/writeups/tryhackme/rabbitstr/</guid>
+      <description>Enumeration # For port enumeration, I started with rustscan and then did a detailed scan with nmap.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/tryhackme/rabbitstr/feature.png" />
+    </item>
+    
+    <item>
+      <title>SOFTWARICA HACKFEST 2025</title>
+      <link>http://localhost:1313/writeups/ctfs/softwarica-hackfest/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/writeups/ctfs/softwarica-hackfest/</guid>
+      <description>SOFTWARICA HACKFEST 2025 Jan 03 Writeup by Team TkNB@Nepal # Challenge name: Happy Holi!</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/ctfs/softwarica-hackfest/feature.png" />
+    </item>
+    
+    <item>
+      <title>Lookup</title>
+      <link>http://localhost:1313/writeups/tryhackme/lookup/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/writeups/tryhackme/lookup/</guid>
+      <description>after gaining the ip of machine i quickly started nmap scan</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/tryhackme/lookup/feature.png" />
     </item>
     
   </channel>

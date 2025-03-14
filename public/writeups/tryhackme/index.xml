@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TryHackMe on Glutton&#39;s Diet</title>
+    <title>TryHackMe on glutto.n</title>
     <link>http://localhost:1313/writeups/tryhackme/</link>
-    <description>Recent content in TryHackMe on Glutton&#39;s Diet</description>
+    <description>Recent content in TryHackMe on glutto.n</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 Glutto.n</copyright>
+    <copyright>&amp;copy; 2025 glutto.n | All Rights Reserved</copyright>
     <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/writeups/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Rabbit Store</title>
+      <link>http://localhost:1313/writeups/tryhackme/rabbitstr/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/writeups/tryhackme/rabbitstr/</guid>
+      <description>Enumeration # For port enumeration, I started with rustscan and then did a detailed scan with nmap.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/tryhackme/rabbitstr/feature.png" />
+    </item>
+    
+    <item>
+      <title>Lookup</title>
+      <link>http://localhost:1313/writeups/tryhackme/lookup/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/writeups/tryhackme/lookup/</guid>
+      <description>after gaining the ip of machine i quickly started nmap scan</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/tryhackme/lookup/feature.png" />
+    </item>
     
   </channel>
 </rss>

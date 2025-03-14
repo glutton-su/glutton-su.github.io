@@ -1,14 +1,12 @@
 ---
 title: "ApoorvCTF 2025"
 description: Writeups of ApoorvCTF 2025
-type: "list"
 draft: false
 date: 2025-03-03
-Tags:
+tags:
 - CTF
 - ApoorvCTF
 - 2025
-
 ---
 
 

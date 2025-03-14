@@ -7,29 +7,24 @@
 
 colorScheme = "blowfish"
 defaultAppearance = "dark" # valid options: light or dark
-autoSwitchAppearance = false
+autoSwitchAppearance = false # true
 
 enableSearch = true
 enableCodeCopy = true
 
-#replyByEmail = false
+# mainSections = ["writeups", "writeups/CTFs", "writeups/HackTheBox", "writeups/TryHackMe"]
 
-# mainSections = ["section1", "section2"]
 # robots = ""
 
 disableImageOptimization = true
 disableTextInHeader = false
-# backgroundImageWidth = 1200
 
-defaultBackgroundImage = "img/bghugo.jpeg" # used as default for background images 
-defaultFeaturedImage = "img/bghugo.jpeg" # used as default for featured images in all articles
+defaultBackgroundImage = "img/banner.png" # used as default for background images 
+defaultFeaturedImage = "img/banner.png" # used as default for featured images in all articles
 
-highlightCurrentMenuArea = true
-smartTOC = true
-smartTOCHideUnfocusedChildren = false
-
-#giteaDefaultServer = "https://git.fsfe.org"
-#forgejoDefaultServer = "https://v8.next.forgejo.org"
+ highlightCurrentMenuArea = true
+ smartTOC = true
+ smartTOCHideUnfocusedChildren = false
 
 [header]
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
@@ -76,11 +71,11 @@ smartTOCHideUnfocusedChildren = false
   showReadingTime = true
   showTableOfContents = true
   # showRelatedContent = false
-  #Â relatedContentLimit = 3
+  # relatedContentLimit = 3
   showTaxonomies = true
   showAuthorsBadges = false
   showWordCount = true
-  # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  sharingLinks = [ "linkedin", "twitter", "whatsapp", "telegram", "pinterest", "reddit", "facebook", "email"]
   showZenMode = false
 
 [list]
@@ -141,12 +136,6 @@ smartTOCHideUnfocusedChildren = false
   # websiteid = "ABC12345"
   # domain = "llama.yoursite.com"
   # dataDomains = "yoursite.com,yoursite2.com"
-  # scriptName = ""
-  # enableTrackEvent = true
-
-[selineAnalytics]
-  # token = "XXXXXX"
-  # enableTrackEvent = true
 
 [buymeacoffee]
   # identifier = ""
@@ -160,8 +149,3 @@ smartTOCHideUnfocusedChildren = false
   # bing = ""
   # pinterest = ""
   # yandex = ""
-  # fediverse = ""
-
-[rssnext]
-  # feedId = ""
-  # userId = ""
