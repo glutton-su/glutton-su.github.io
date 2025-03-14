@@ -49,5 +49,15 @@
       
     </item>
     
+    <item>
+      <title>TryHackMe</title>
+      <link>http://localhost:1313/tags/tryhackme/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/tryhackme/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

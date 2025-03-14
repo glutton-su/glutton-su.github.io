@@ -3,6 +3,8 @@ title: "Lookup"
 description: A simple writeup of this easy box.
 date: 2025-01-27
 hidemeta: true
+tags:
+- TryHackMe
 ---
 
 ![image.png](lookup%20thm%20149b62881f0980b78996cc37fe1ab28a/image.png)
