@@ -7,7 +7,7 @@ description: "a description"
 
 
 
-# I am Subeg Suwal(glutton)
+# I am Subeg Suwal(glutto.n)
 
 Hi, I’m **Subeg Suwal**, a passionate cybersecurity student currently pursuing a **BSc. (Hons) in Cybersecurity and Ethical Hacking** at **Softwarica College of IT and E-Commerce**. I’m deeply interested in exploring the world of cybersecurity, particularly in areas like **web application penetration testing**, **ethical hacking**, and **CTF challenges**.
 
