@@ -10,7 +10,7 @@ tags:
 
 # Instant-htb
 
-First of all add the machine ip to your /etc/hosts file.
+First of all add the machine IP to your /etc/hosts file.
 
 The nmap scan for the machine IP showed:
 
