@@ -1,0 +1,187 @@
+---
+title: "SOFTWARICA HACKFEST 2.0 2025"
+description: Writeups of SOFTWARICA HACKFEST 2.0 2025
+draft: false
+date: 2025-06-20
+tags:
+- CTF
+- 2025
+---
+
+# SOFTWARICA HACKFEST 2.0
+
+# WEB
+
+## Read between the lines
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%201.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%202.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%203.png)
+
+## The Hidden Entity
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%204.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%205.png)
+
+## The Forgotten Key
+
+org request
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%206.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%207.png)
+
+logged in and got this
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%208.png)
+
+checking system controls
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%209.png)
+
+## Ninja Notes
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2010.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2011.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2012.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2013.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2014.png)
+
+## Everything is yours
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2015.png)
+
+can also be done like this
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2016.png)
+
+## Read between the lines-2
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2017.png)
+
+Solution:
+
+LFI with php filter
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2018.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2019.png)
+
+# Crypto
+
+## Happy Holi
+
+![happy_holi.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/happy_holi.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2020.png)
+
+Flag: `softwarica{DEC0L0R}`
+
+## substitution cipher
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2021.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2022.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2023.png)
+
+## decode me
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2024.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2025.png)
+
+# Misc
+
+## **? Not Really.**
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2026.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2027.png)
+
+## Time Machine
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2028.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2029.png)
+
+## Copy_Paste
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2030.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2031.png)
+
+The provided Page had a function running which on copy event changed every copied text will be this string: `DDKVPefm`
+
+Checking this string in dcode.fr
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2032.png)
+
+Got the Flag.
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2033.png)
+
+## Gitar updated
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2034.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2035.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2036.png)
+
+## crack me if you can
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2037.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2038.png)
+
+converting zip to hash
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2039.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2040.png)
+
+Wasn’t working on unzip so used 7z.
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2041.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2042.png)
+
+We have data from `/etc/passwd` and `/etc/shadow` . unshadowing it and prepared to crack using `--format=crypt` .
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2043.png)
+
+Flag: `softwarica{     _defensive4}`
+
+## virus
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2044.png)
+
+Flag: `softwarica{ILuVYOU}`
+
+# OSINT
+
+## Follow the feed
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2045.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2046.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2047.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2048.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2049.png)
+
+![image.png](SOFTWARICA%20HACKFEST%202%200%20210526fa99a58083b537d8b335e89153/image%2050.png)
+
+There was a ROT 47 Ciphertext here which gave the flag.

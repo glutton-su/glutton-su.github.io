@@ -15,7 +15,7 @@ Hi, I’m **Subeg Suwal**, a passionate cybersecurity student currently pursuing
 
 ## **About Me**
 
-- **Education**: Currently in my first semester of BSc. (Hons) Cybersecurity and Ethical Hacking at Softwarica College.
+- **Education**: Currently studying BSc. (Hons) Cybersecurity and Ethical Hacking at Softwarica College.
 - **Learning**: Actively learning **web application penetration testing** through platforms like [HackTheBox](https://www.hackthebox.com/) and [TryHackMe](https://tryhackme.com/).
 - **CTF Player**: An active CTF player representing **Team NCA@Nepal**.
 - **Skills**: Web app pentesting, CTF challenges, and cybersecurity fundamentals.
