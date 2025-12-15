@@ -1,7 +1,7 @@
 ---
 title: "Rabbit Store"
 description: A simple writeup of this Medium box.
-date: 2025-02-22
+date: 2025-12-14
 hidemeta: true
 tags:
 - TryHackMe
