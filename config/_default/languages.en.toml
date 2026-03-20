@@ -1,21 +1,21 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "glutto.n"
+title = "Subeg Suwal"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/profile.png"
-  # secondaryLogo = "img/profile.png"
+  # logo = "img/profile.jpg"
+  # secondaryLogo = "img/profile.jpg"
   description = "I'm Subeg Suwal, a Security Researcher & Penetration Tester. Working in network pentest and web-app hacking."
   copyright = "&copy; 2025 glutto.n | All Rights Reserved"
 
  [params.author]
    name = "Subeg Suwal"
-   image = "img/profile.png"
+   image = "img/profile.jpg"
    headline = "Breaking and Escalating permissions for fun..."
    bio = "Web & Network Pentester | Learning Binary Exploitation "
    links = [
