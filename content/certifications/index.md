@@ -1,0 +1,3 @@
+---
+featureimage: cover.png
+---
