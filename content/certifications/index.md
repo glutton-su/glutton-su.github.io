@@ -14,8 +14,5 @@ showPagination: false
 showTableOfContents: false
 showReadingTime: false
 showCards: true
----
-
-{{< list title="Certifications" cardView=true limit=6 where="Type" value="certifications" >}}
-
+cardView: false
 ---
