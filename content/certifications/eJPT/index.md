@@ -10,6 +10,4 @@ description: "a description"
     
     >}}
 
-<!-- OR -->
-
-![Abstract purple artwork](abstract.jpg "Photo by [Jr Korpa](https://unsplash.com/@jrkorpa) on [Unsplash](https://unsplash.com/)")
+![VERIFY CREDENTIAL](https://certs.ine.com/d120e0e9-2c89-4b74-8021-348dba55002c#acc.n0MAqWRL)
