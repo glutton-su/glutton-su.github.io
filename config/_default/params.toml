@@ -84,7 +84,7 @@ defaultFeaturedImage = "img/banner.png" # used as default for featured images in
   showSummary = true
   showTableOfContents = false
   showCards = true
-  groupByYear = true
+  groupByYear = false
   cardView = false
   cardViewScreenWidth = false
 
