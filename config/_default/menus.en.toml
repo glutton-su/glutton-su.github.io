@@ -11,25 +11,30 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "home"
+  name = ">home<"
   pageRef = "/"
   weight = 10
 
 [[main]]
-  name = "whoami"
+  name = ">whoami<"
   pageRef = "whoami"
   weight = 20
 
 [[main]]
-  name = "writeups"
+  name = ">writeups<"
   pageRef = "writeups"
   weight = 40
 
 [[main]]
-  name = "projects"
+  name = ">projects<"
   pageRef = "projects"
   weight = 60
 
+[[main]]
+  name = ">certifications<"
+  pageRef = "certifications"
+  weight = 60
+  
 # [[main]]
 #   name = "example sub-menu 1"
 #   parent = "Parent"
