@@ -1,7 +1,7 @@
 ---
 title: "My Certifications"
 description: A collection of my certifications
-type: "list"
+type: "certifications"
 hidemeta: true
 featureimage: cover.png
 ---
