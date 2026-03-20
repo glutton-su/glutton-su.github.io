@@ -1,0 +1,5 @@
+/* Remove blue overlay on article hero */
+.article-header::after,
+.article-hero::after {
+  display: none !important;
+}
