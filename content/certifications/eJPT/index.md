@@ -2,6 +2,19 @@
 title: "eJPT"
 type: "certifications"
 description: "a description"
+showDate: false
+showViews: true
+showLikes: true
+showDateOnlyInArticle: false
+showDateUpdated: false
+showAuthor: false
+showWordCount: false
+showBreadcrumbs: false
+showDraftLabel: true
+showEdit: false
+showPagination: false
+showTableOfContents: false
+showReadingTime: false
 ---
 
 {{< figure

@@ -13,7 +13,6 @@ showEdit: false
 showPagination: false
 showTableOfContents: false
 showReadingTime: false
-showCards: false
 ---
 
 {{< list title="Certifications" cardView=true limit=6 where="Type" value="certifications" >}}
