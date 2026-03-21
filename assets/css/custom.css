@@ -3,3 +3,13 @@
 .article-hero::after {
   display: none !important;
 }
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--color-primary-500);
+  z-index: 9999;
+  width: 0%;
+  transition: width 0.1s ease;
+}
