@@ -12,7 +12,7 @@
 
 [[main]]
   name = "home"
-  pre = "home"
+  pre = "<i class='fas fa-house'></i>"
   pageRef = "/"
   weight = 10
 
