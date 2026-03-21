@@ -16,4 +16,4 @@ showReadingTime: false
 showCards: true
 featureimage: ./cover.png
 ---
- {{ < cve-feed > }}
+{{< cve-feed >}}
