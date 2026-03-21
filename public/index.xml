@@ -1,72 +1,172 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>glutto.n</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on glutto.n</description>
+    <title>Subeg Suwal</title>
+    <link>https://subegsuwal.com.np/</link>
+    <description>Recent content on Subeg Suwal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2025 glutto.n | All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 14 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://subegsuwal.com.np/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Rabbit Store</title>
+      <link>https://subegsuwal.com.np/writeups/tryhackme/rabbitstr/</link>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/writeups/tryhackme/rabbitstr/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/writeups/tryhackme/rabbitstr/feature.png" />
+    </item>
+    
+    <item>
+      <title>SOFTWARICA HACKFEST 2.0 2025</title>
+      <link>https://subegsuwal.com.np/writeups/ctfs/softwarica-hackfest-2.0/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/writeups/ctfs/softwarica-hackfest-2.0/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/writeups/ctfs/softwarica-hackfest-2.0/featured.png" />
+    </item>
     
     <item>
       <title>Instant</title>
-      <link>http://localhost:1313/writeups/hackthebox/instant-htb/</link>
+      <link>https://subegsuwal.com.np/writeups/hackthebox/instant-htb/</link>
       <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/writeups/hackthebox/instant-htb/</guid>
-      <description>Instant-htb # First of all add the machine ip to your /etc/hosts file.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/hackthebox/instant-htb/feature.png" />
+      <guid>https://subegsuwal.com.np/writeups/hackthebox/instant-htb/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/writeups/hackthebox/instant-htb/feature.png" />
     </item>
     
     <item>
       <title>VishwaCTF 2025</title>
-      <link>http://localhost:1313/writeups/ctfs/vishwactf/</link>
+      <link>https://subegsuwal.com.np/writeups/ctfs/vishwactf/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/writeups/ctfs/vishwactf/</guid>
-      <description>Due to some teams being disqualified, we were later ranked 11th.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/ctfs/vishwactf/feature.png" />
+      <guid>https://subegsuwal.com.np/writeups/ctfs/vishwactf/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/writeups/ctfs/vishwactf/feature.png" />
     </item>
     
     <item>
       <title>ApoorvCTF 2025</title>
-      <link>http://localhost:1313/writeups/ctfs/apoorvctf/</link>
+      <link>https://subegsuwal.com.np/writeups/ctfs/apoorvctf/</link>
       <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/writeups/ctfs/apoorvctf/</guid>
-      <description>Binary Exploitation # Challenge: Kogarashi Café - The First Visit # Flag: apoorvctf{c0ffee_buff3r_sp1ll} # Solution:</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/ctfs/apoorvctf/featured.png" />
-    </item>
-    
-    <item>
-      <title>Rabbit Store</title>
-      <link>http://localhost:1313/writeups/tryhackme/rabbitstr/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/writeups/tryhackme/rabbitstr/</guid>
-      <description>Enumeration # For port enumeration, I started with rustscan and then did a detailed scan with nmap.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/tryhackme/rabbitstr/feature.png" />
+      <guid>https://subegsuwal.com.np/writeups/ctfs/apoorvctf/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/writeups/ctfs/apoorvctf/featured.png" />
     </item>
     
     <item>
       <title>SOFTWARICA HACKFEST 2025</title>
-      <link>http://localhost:1313/writeups/ctfs/softwarica-hackfest/</link>
+      <link>https://subegsuwal.com.np/writeups/ctfs/softwarica-hackfest/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/writeups/ctfs/softwarica-hackfest/</guid>
-      <description>SOFTWARICA HACKFEST 2025 Jan 03 Writeup by Team TkNB@Nepal # Challenge name: Happy Holi!</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/ctfs/softwarica-hackfest/feature.png" />
+      <guid>https://subegsuwal.com.np/writeups/ctfs/softwarica-hackfest/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/writeups/ctfs/softwarica-hackfest/feature.png" />
     </item>
     
     <item>
       <title>Lookup</title>
-      <link>http://localhost:1313/writeups/tryhackme/lookup/</link>
+      <link>https://subegsuwal.com.np/writeups/tryhackme/lookup/</link>
       <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/writeups/tryhackme/lookup/</guid>
-      <description>after gaining the ip of machine i quickly started nmap scan</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/writeups/tryhackme/lookup/feature.png" />
+      <guid>https://subegsuwal.com.np/writeups/tryhackme/lookup/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/writeups/tryhackme/lookup/feature.png" />
+    </item>
+    
+    <item>
+      <title>whoami??</title>
+      <link>https://subegsuwal.com.np/whoami/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/whoami/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/whoami/featured.png" />
+    </item>
+    
+    <item>
+      <title>CCEP</title>
+      <link>https://subegsuwal.com.np/certifications/ccep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/certifications/ccep/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/certifications/ccep/cover.png" />
+    </item>
+    
+    <item>
+      <title>CCPP</title>
+      <link>https://subegsuwal.com.np/certifications/ccpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/certifications/ccpp/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/certifications/ccpp/cover.png" />
+    </item>
+    
+    <item>
+      <title>CRTOM</title>
+      <link>https://subegsuwal.com.np/certifications/crtom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/certifications/crtom/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/certifications/crtom/cover.png" />
+    </item>
+    
+    <item>
+      <title>CTIGA</title>
+      <link>https://subegsuwal.com.np/certifications/ctiga/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/certifications/ctiga/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/certifications/ctiga/cover.png" />
+    </item>
+    
+    <item>
+      <title>CVEs</title>
+      <link>https://subegsuwal.com.np/cve-feed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/cve-feed/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/cve-feed/cover.png" />
+    </item>
+    
+    <item>
+      <title>eJPT</title>
+      <link>https://subegsuwal.com.np/certifications/ejpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/certifications/ejpt/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/certifications/ejpt/cover.png" />
+    </item>
+    
+    <item>
+      <title>My Projects</title>
+      <link>https://subegsuwal.com.np/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/projects/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/projects/cover.png" />
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://subegsuwal.com.np/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://subegsuwal.com.np/tools/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://subegsuwal.com.np/tools/cover.png" />
     </item>
     
   </channel>

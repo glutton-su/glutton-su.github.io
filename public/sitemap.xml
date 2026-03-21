@@ -3,74 +3,125 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://subegsuwal.com.np/writeups/tryhackme/rabbitstr/</loc>
+    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/</loc>
+    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/writeups/tryhackme/</loc>
+    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/writeups/</loc>
+    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/writeups/ctfs/softwarica-hackfest-2.0/</loc>
+    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/writeups/hackthebox/instant-htb/</loc>
+    <lastmod>2025-03-14T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/writeups/ctfs/vishwactf/</loc>
     <lastmod>2025-03-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/writeups/ctfs/vishwactf/</loc>
-    <lastmod>2025-03-11T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/writeups/</loc>
-    <lastmod>2025-03-11T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/writeups/ctfs/apoorvctf/</loc>
+    <loc>https://subegsuwal.com.np/writeups/ctfs/apoorvctf/</loc>
     <lastmod>2025-03-03T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/writeups/tryhackme/rabbitstr/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/writeups/tryhackme/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/writeups/ctfs/</loc>
+    <loc>https://subegsuwal.com.np/writeups/ctfs/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/writeups/hackthebox/</loc>
+    <loc>https://subegsuwal.com.np/writeups/hackthebox/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/writeups/ctfs/softwarica-hackfest/</loc>
+    <loc>https://subegsuwal.com.np/writeups/ctfs/softwarica-hackfest/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/writeups/tryhackme/lookup/</loc>
+    <loc>https://subegsuwal.com.np/writeups/tryhackme/lookup/</loc>
     <lastmod>2025-01-27T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://subegsuwal.com.np/whoami/</loc>
     <lastmod>2024-12-12T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/whoami/</loc>
-    <lastmod>2024-12-12T00:00:00+00:00</lastmod>
+    <loc>https://subegsuwal.com.np/certifications/ccep/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/certifications/ccpp/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/certifications/crtom/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/certifications/ctiga/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/cve-feed/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/certifications/ejpt/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/certifications/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/projects/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://subegsuwal.com.np/tools/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
