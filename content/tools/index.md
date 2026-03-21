@@ -17,6 +17,6 @@ showCards: true
 featureimage: ./cover.png
 showComments: flase
 ---
-{{</* toolkit */>}}
+{{< toolkit >}}
 ---
-{{</* revshell */>}}
+{{< revshell >}}
