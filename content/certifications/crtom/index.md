@@ -6,6 +6,7 @@ showViews: true
 showLikes: true
 heroStyle: background
 featureimage: cover.png
+showDate: false
 ---
 
 {{< figure
