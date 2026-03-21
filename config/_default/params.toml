@@ -94,7 +94,6 @@ defaultFeaturedImage = "img/banner.png" # used as default for featured images in
   cardView = false
   cardViewScreenWidth = false
   constrainItemsWidth = false
-  groupByYear = false
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]
