@@ -12,7 +12,7 @@
 
 [[main]]
   name = "home"
-  pre = "<i class='fa fa-home' aria-hidden='true'></i>"
+  pre = "<i class='fa-solid fa-home'></i>"
   pageRef = "/"
   weight = 10
 
@@ -22,17 +22,17 @@
   weight = 20
 
 [[main]]
-  name = "writeups<"
+  name = "writeups"
   pageRef = "writeups"
   weight = 40
 
 [[main]]
-  name = "projects<"
+  name = "projects"
   pageRef = "projects"
   weight = 60
 
 [[main]]
-  name = "certifications<"
+  name = "certifications"
   pageRef = "certifications"
   weight = 60
   
