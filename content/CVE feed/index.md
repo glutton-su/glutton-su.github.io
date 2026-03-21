@@ -15,5 +15,6 @@ showTableOfContents: false
 showReadingTime: false
 showCards: true
 featureimage: ./cover.png
+showComments: flase
 ---
 {{< cve-feed >}}
