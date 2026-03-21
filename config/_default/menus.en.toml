@@ -46,6 +46,12 @@
   pageRef = "CVE feed"
   weight = 60
 
+[[main]]
+  name = "tools"
+  pre = "<i class='fa-solid fa-gears'></i>"
+  pageRef = "tools"
+  weight = 60
+
 # [[main]]
 #   name = "example sub-menu 1"
 #   parent = "Parent"
