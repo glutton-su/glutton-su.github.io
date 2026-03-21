@@ -14,7 +14,7 @@ showPagination: false
 showTableOfContents: false
 showReadingTime: false
 showCards: true
-featureimage: cover.png
+featureimage: ./cover.png
 ---
 
 

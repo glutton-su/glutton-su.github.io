@@ -25,7 +25,6 @@ Hi, I’m **Subeg Suwal**, a passionate cybersecurity student currently pursuing
 ## **Badges and Profiles**
 
 - **TryHackMe Profile**: [glutto.n](https://tryhackme.com/r/p/glutto.n)  
-  <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3691344" style='border:none;'></iframe>
 - **HackTheBox Profile**:[glutton2](https://app.hackthebox.com/profile/2159654)
 - **GitHub**: [glutton-su](https://github.com/glutton-su)
 - **LinkedIn**: [Subeg Suwal](https://www.linkedin.com/in/subeg-suwal-252747312/)
