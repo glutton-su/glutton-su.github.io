@@ -16,6 +16,7 @@ showReadingTime: false
 showCards: true
 featureimage: ./cover.png
 showComments: flase
+width: full
 ---
 {{< toolkit >}}
 ---
