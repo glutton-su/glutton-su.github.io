@@ -49,8 +49,8 @@ defaultFeaturedImage = "img/banner.png" # used as default for featured images in
 
 [article]
   showDate = true
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showDateOnlyInArticle = true
   showDateUpdated = false
   showAuthor = true
@@ -120,13 +120,13 @@ defaultFeaturedImage = "img/banner.png" # used as default for featured images in
   cardViewScreenWidth = false
 
 [firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
+  apiKey = "AIzaSyCJ2hyb8e5OUJWC4V_IDcToGATbnIdG6mc"
+  authDomain: "blowfish-ae2ee.firebaseapp.com"
+  projectId = "blowfish-ae2ee"
+  storageBucket = "blowfish-ae2ee.firebasestorage.app"
+  messagingSenderId = "133060723705"
+  appId = "1:133060723705:web:817dde89527c3e7e37b328"
+  measurementId = "G-XML6N501Q5"
 
 [fathomAnalytics]
   # site = "ABC12345"
