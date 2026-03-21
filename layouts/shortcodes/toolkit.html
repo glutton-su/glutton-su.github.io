@@ -11,7 +11,9 @@
 .cf{display:grid;grid-template-columns:200px 185px 1fr;grid-template-rows:36px 1fr;
   height:560px;font-family:monospace;font-size:12px;
   border:0.5px solid rgb(var(--n700));border-radius:8px;overflow:hidden;
-  background:rgb(var(--n900));margin:1.5rem 0;}
+  background:rgb(var(--n900));
+  width:min(1040px,calc(100vw - 2rem));
+  margin:1.5rem auto;}
 .cf-topbar{grid-column:1/-1;background:rgb(var(--n800));display:flex;align-items:center;
   padding:0 12px;gap:10px;border-bottom:0.5px solid rgb(var(--n700));}
 .cf-logo{font-weight:500;font-size:13px;color:rgb(var(--s400));letter-spacing:0.05em;}
