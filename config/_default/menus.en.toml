@@ -18,13 +18,13 @@
 
 [[main]]
   name = "whoami??"
-  pre = "<i class='fa-solid fa-home'></i>"
+  pre = "<i class='fa-solid fa-id-card'></i>"
   pageRef = "whoami"
   weight = 20
 
 [[main]]
   name = "writeups"
-  pre = "<i class='fa-solid fa-id-card'></i>"
+  pre = "<i class='fa-solid fa-id-newspaper-o'></i>"
   pageRef = "writeups"
   weight = 40
 
