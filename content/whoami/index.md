@@ -5,53 +5,55 @@ type: "list"
 description: "a description"
 ---
 
+# I am Subeg Suwal (glutto.n)
 
-
-# I am Subeg Suwal(glutto.n)
-
-Hi, I’m **Subeg Suwal**, a passionate cybersecurity student currently pursuing a **BSc. (Hons) in Cybersecurity and Ethical Hacking** at **Softwarica College of IT and E-Commerce**. I’m deeply interested in exploring the world of cybersecurity, particularly in areas like **web application penetration testing**, **ethical hacking**, and **CTF challenges**.
+Hi, I'm **Subeg Suwal**, a cybersecurity student pursuing a **BSc. (Hons) in Cybersecurity and Ethical Hacking** at **Softwarica College of IT and E-Commerce**. I focus on **penetration testing**, **exploit development**, and **CTF challenges**.
 
 ---
 
-## **About Me**
+## About Me
 
-- **Education**: Currently studying BSc. (Hons) Cybersecurity and Ethical Hacking at Softwarica College.
-- **Learning**: Actively learning **web application penetration testing** through platforms like [HackTheBox](https://www.hackthebox.com/) and [TryHackMe](https://tryhackme.com/).
-- **CTF Player**: An active CTF player representing **Team NCA@Nepal**.
-- **Skills**: Web app pentesting, CTF challenges, and cybersecurity fundamentals.
-
----
-
-## **Badges and Profiles**
-
-- **TryHackMe Profile**: [glutto.n](https://tryhackme.com/r/p/glutto.n)  
-- **HackTheBox Profile**:[glutton2](https://app.hackthebox.com/profile/2159654)
-- **GitHub**: [glutton-su](https://github.com/glutton-su)
-- **LinkedIn**: [Subeg Suwal](https://www.linkedin.com/in/subeg-suwal-252747312/)
-- **Discord**: `glutto.n` (1238121414356242492)
+- **Education**: BSc. (Hons) Cybersecurity and Ethical Hacking — Softwarica College
+- **Certifications**: eJPT (eLearnSecurity Junior Penetration Tester) — ID: 177314916
+- **CTF Player**: Active competitor representing **Team NCA@Nepal** — placed **11th at VishwaCTF 2025**
+- **Platforms**: Regular player on [HackTheBox](https://app.hackthebox.com/profile/2159654) and [TryHackMe](https://tryhackme.com/r/p/glutto.n)
+- **Focus Areas**: Web app pentesting, Active Directory attacks, binary exploitation, CTF challenges
 
 ---
 
-## **Projects and Achievements**
+## Skills
 
-- **Personal Website**: [glutton-su.xyz](https://glutton-su.xyz/)
-- **CTF Write-ups**: Regularly participating in CTF challenges and documenting my progress.
-- **Home Lab**: Setting up a home lab for practicing penetration testing and ethical hacking.
-
----
-
-## **Goals**
-
-- **Short-term**: Master web application penetration testing and earn certifications like **CBBH(Certified Bug Bounty Hunter)** and **CPTS(Certified Penetration Testing Specialist)**.
-- **Long-term**: Become a professional penetration tester or cybersecurity analyst, contributing to a safer digital world.
+- **Recon**: rustscan, nmap, ffuf, gobuster, feroxbuster
+- **Web**: SQLi, SSRF, SSTI, LFI, JWT abuse, API security
+- **Active Directory**: BloodHound, nxc/netexec, Kerberoasting, RBCD, ADCS abuse, DPAPI
+- **Exploit Dev**: Buffer overflows, ROP chains, format strings, pwntools
+- **Pivoting**: Chisel, Ligolo-ng
+- **Languages**: Python, JavaScript, C, HTML, CSS
 
 ---
 
-## **Connect with Me**
+## Certifications & Goals
 
-Feel free to reach out to me for collaborations, discussions, or just to chat about cybersecurity!
+- ✅ **eJPT** — eLearnSecurity
+- 🔄 **ASCP** (API Security Certified Professional) — in progress
+- 🎯 **CPTS** — Certified Penetration Testing Specialist (planned)
+
+---
+
+## Profiles
+
+| Platform | Handle |
+|---|---|
+| HackTheBox | [glutton2](https://app.hackthebox.com/profile/2159654) |
+| TryHackMe | [glutto.n](https://tryhackme.com/r/p/glutto.n) |
+| GitHub | [glutton-su](https://github.com/glutton-su) |
+| LinkedIn | [Subeg Suwal](https://www.linkedin.com/in/subeg-suwal-252747312/) |
+| Discord | `glutto.n` |
+
+---
+
+## Connect
 
 - **Email**: Glutton-S@ncateam.xyz
 - **LinkedIn**: [Subeg Suwal](https://www.linkedin.com/in/subeg-suwal-252747312/)
 - **GitHub**: [glutton-su](https://github.com/glutton-su)
-- **Discord**: `g1u770.n` (1238121414356242492)
