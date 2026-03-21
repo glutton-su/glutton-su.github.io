@@ -11,32 +11,28 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "home<"
-  pre=">"
+  name = "home"
+  pre = "home"
   pageRef = "/"
   weight = 10
 
 [[main]]
-  name = "whoami<"
-  pre=">"
+  name = "whoami??"
   pageRef = "whoami"
   weight = 20
 
 [[main]]
   name = "writeups<"
-  pre=">"
   pageRef = "writeups"
   weight = 40
 
 [[main]]
   name = "projects<"
-  pre=">"
   pageRef = "projects"
   weight = 60
 
 [[main]]
   name = "certifications<"
-  pre=">"
   pageRef = "certifications"
   weight = 60
   
