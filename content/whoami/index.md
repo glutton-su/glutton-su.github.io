@@ -34,7 +34,11 @@ Hi, I'm **Subeg Suwal**, a cybersecurity student pursuing a **BSc. (Hons) in Cyb
 
 ## Certifications & Goals
 
-- ✅ **eJPT** — eLearnSecurity
+- ✅ **eJPT** — eLearnSecurity Junior Penetration Tester
+- ✅ **CCPP** — Certified C++ Practitioner Professional (Red Team Leaders)
+- ✅ **CCEP** — Certified Cybersecurity Educator Professional (Red Team Leaders)
+- ✅ **CRTOM** — Certified Red Team Operations Management (Red Team Leaders)
+- ✅ **CTIGA** — Certified Threat Intelligence & Governance Analyst (Red Team Leaders)
 - 🔄 **ASCP** (API Security Certified Professional) — in progress
 - 🎯 **CPTS** — Certified Penetration Testing Specialist (planned)
 
