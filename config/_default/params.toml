@@ -87,6 +87,7 @@ defaultFeaturedImage = "img/banner.png" # used as default for featured images in
   groupByYear = false
   cardView = false
   cardViewScreenWidth = false
+  heroStyle= background
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]
