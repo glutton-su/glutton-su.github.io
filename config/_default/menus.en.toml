@@ -24,7 +24,7 @@
 
 [[main]]
   name = "writeups"
-  pre = "<i class='fa-solid fa-newspaper-o'></i>"
+  pre = "<i class='fa-solid fa-folder-open'></i>"
   pageRef = "writeups"
   weight = 40
 
