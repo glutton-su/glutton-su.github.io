@@ -58,6 +58,6 @@ Hi, I'm **Subeg Suwal**, a cybersecurity student pursuing a **BSc. (Hons) in Cyb
 
 ## Connect
 
-- **Email**: Glutton-S@ncateam.xyz
+- **Email**: glutton@subegsuwal.com.np
 - **LinkedIn**: [Subeg Suwal](https://www.linkedin.com/in/subeg-suwal-252747312/)
 - **GitHub**: [glutton-su](https://github.com/glutton-su)
