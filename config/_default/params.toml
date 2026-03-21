@@ -54,6 +54,7 @@ defaultFeaturedImage = "img/banner.png" # used as default for featured images in
   showDateOnlyInArticle = true
   showDateUpdated = false
   showAuthor = true
+  showComments = true
   # showAuthorBottom = false
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
