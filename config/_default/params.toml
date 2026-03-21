@@ -121,7 +121,7 @@ defaultFeaturedImage = "img/banner.png" # used as default for featured images in
 
 [firebase]
   apiKey = "AIzaSyCJ2hyb8e5OUJWC4V_IDcToGATbnIdG6mc"
-  authDomain: "blowfish-ae2ee.firebaseapp.com"
+  authDomain = "blowfish-ae2ee.firebaseapp.com"
   projectId = "blowfish-ae2ee"
   storageBucket = "blowfish-ae2ee.firebasestorage.app"
   messagingSenderId = "133060723705"
