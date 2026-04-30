@@ -13,22 +13,23 @@ Hi, I'm **Subeg Suwal**, a cybersecurity student pursuing a **BSc. (Hons) in Cyb
 
 ## About Me
 
-- **Education**: BSc. (Hons) Cybersecurity and Ethical Hacking — Softwarica College
+- **Education**: BSc. (Hons) Cybersecurity and Ethical Hacking (Running) — Softwarica College
 - **Certifications**: eJPT (eLearnSecurity Junior Penetration Tester) — ID: 177314916
-- **CTF Player**: Active competitor representing **Team NCA@Nepal** — placed **11th at VishwaCTF 2025**
+- **CTF Player**: Current Member of Team 50 Shades of Hacking and Former **Team NCA@Nepal** — placed **11th at VishwaCTF 2025**
 - **Platforms**: Regular player on [HackTheBox](https://app.hackthebox.com/profile/2159654) and [TryHackMe](https://tryhackme.com/r/p/glutto.n)
 - **Focus Areas**: Web app pentesting, Active Directory attacks, binary exploitation, CTF challenges
 
 ---
 
 ## Skills
-
 - **Recon**: rustscan, nmap, ffuf, gobuster, feroxbuster
 - **Web**: SQLi, SSRF, SSTI, LFI, JWT abuse, API security
 - **Active Directory**: BloodHound, nxc/netexec, Kerberoasting, RBCD, ADCS abuse, DPAPI
 - **Exploit Dev**: Buffer overflows, ROP chains, format strings, pwntools
 - **Pivoting**: Chisel, Ligolo-ng
 - **Languages**: Python, JavaScript, C, HTML, CSS
+
+- **Fundamentals**: Linux, Bash, Git, Docker, TCP/IP, SSH, systemd, Windows, Active Directory
 
 ---
 
