@@ -23,6 +23,12 @@
   weight = 20
 
 [[main]]
+  name = "resume"
+  pre = "<i class='fa-solid fa-file-lines'></i>"
+  pageRef = "resume"
+  weight = 30
+
+[[main]]
   name = "writeups"
   pre = "<i class='fa-solid fa-folder-open'></i>"
   pageRef = "writeups"
