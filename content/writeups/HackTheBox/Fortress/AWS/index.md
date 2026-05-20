@@ -64,7 +64,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 61.23 seconds
 ```
 
-![image.png](image.png)
+![image.png](images/image.png)
 
 we found a subdomain `jobs.amzcorp.local` 
 
