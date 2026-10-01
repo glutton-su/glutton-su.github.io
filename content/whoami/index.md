@@ -2,7 +2,7 @@
 title: "whoami??"
 date: 2024-12-12
 type: "list"
-description: "a description"
+description: "This page contains my introduction, credentials and goals"
 ---
 
 # I am Subeg Suwal (glutto.n)
